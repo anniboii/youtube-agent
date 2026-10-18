@@ -1,0 +1,307 @@
+{
+  "slug": "003-upi-kinetic",
+  "format": "short",
+  "style": "kinetic",
+  "voice": "hi-IN-SwaraNeural",
+  "voice_rate": "+30%",
+  "hud_label": "upi · kaise kaam karta hai",
+  "source": "Daily Curio: How does UPI move money in 2 seconds? Facts checked: NPCI circular OC 222 (10 settlement cycles/day from 3 Nov 2025, via Business Today); UPI common library spec (PIN encrypted by NPCI's library).",
+  "title": "UPI 2 सेकंड में पैसा कैसे भेजता है? 🤯",
+  "description": "UPI 2 सेकंड में पैसा कैसे भेजता है? सच यह है कि उस वक़्त पैसा दूसरे bank तक जाता ही नहीं. पूरा खेल 40 seconds में.\n\nFollow करो - ऐसे और राज़ हर हफ्ते.\n\n#upi #npci #howitworks #hindi #shorts",
+  "tags": [
+    "upi kaise kaam karta hai",
+    "upi explained in hindi",
+    "npci",
+    "upi settlement",
+    "how upi works",
+    "gpay",
+    "phonepe",
+    "upi pin"
+  ],
+  "beats": [
+    {
+      "say": "UPI दो सेकंड में पैसा कैसे भेजता है?",
+      "shots": [
+        {
+          "at": 0,
+          "type": "question",
+          "bg": "ink",
+          "lines": [
+            "UPI 2 सेकंड में",
+            "पैसा कैसे भेजता है?"
+          ],
+          "sfx": "pop"
+        }
+      ],
+      "_say_tts": "यूपीआई दो सेकंड में पैसा कैसे भेजता है?"
+    },
+    {
+      "say": "सच सुनकर चौंक जाओगे. उस वक़्त पैसा दूसरे bank तक जाता ही नहीं.",
+      "shots": [
+        {
+          "at": 0,
+          "type": "slam",
+          "bg": "cream",
+          "text": "सच सुनकर\nचौंक जाओगे"
+        },
+        {
+          "at": "पैसा",
+          "type": "slam",
+          "bg": "accent",
+          "text": "पैसा\nजाता ही नहीं",
+          "hit": true,
+          "bar": true
+        }
+      ],
+      "_say_tts": "सच सुनकर चौंक जाओगे. उस वक़्त पैसा दूसरे बैंक तक जाता ही नहीं."
+    },
+    {
+      "say": "Scan करते ही, तुम्हारा phone NPCI को request भेजता है.",
+      "shots": [
+        {
+          "at": 0,
+          "type": "flow",
+          "bg": "ink",
+          "from": 0,
+          "to": 1,
+          "nodes": [
+            {
+              "label": "तुम्हारा फ़ोन",
+              "icon": "phone"
+            },
+            {
+              "label": "NPCI",
+              "icon": "switch"
+            },
+            {
+              "label": "तुम्हारा Bank",
+              "icon": "bank"
+            },
+            {
+              "label": "दुकान का Bank",
+              "icon": "bank"
+            },
+            {
+              "label": "दुकान",
+              "icon": "speaker"
+            }
+          ]
+        }
+      ],
+      "_say_tts": "Scan करते ही, तुम्हारा फ़ोन एनपीसीआई को रिक्वेस्ट भेजता है."
+    },
+    {
+      "say": "हर UPI payment, इसी एक switch से गुज़रता है.",
+      "shots": [
+        {
+          "at": 0,
+          "type": "icon",
+          "bg": "blue",
+          "icon": "switch",
+          "ring": true,
+          "text": "हर UPI payment यहीं से"
+        }
+      ],
+      "_say_tts": "हर यूपीआई पेमेंट, इसी एक स्विच से गुज़रता है."
+    },
+    {
+      "say": "PIN तो GPay को भी नहीं दिखता. NPCI उसे lock करके bank भेजता है.",
+      "shots": [
+        {
+          "at": 0,
+          "type": "icon",
+          "bg": "cream",
+          "icon": "lock",
+          "text": "GPay को भी नहीं दिखता"
+        },
+        {
+          "at": "NPCI",
+          "type": "flow",
+          "bg": "ink",
+          "from": 1,
+          "to": 2,
+          "badge": {
+            "node": 2,
+            "icon": "lock",
+            "text": "PIN"
+          },
+          "nodes": [
+            {
+              "label": "तुम्हारा फ़ोन",
+              "icon": "phone"
+            },
+            {
+              "label": "NPCI",
+              "icon": "switch"
+            },
+            {
+              "label": "तुम्हारा Bank",
+              "icon": "bank"
+            },
+            {
+              "label": "दुकान का Bank",
+              "icon": "bank"
+            },
+            {
+              "label": "दुकान",
+              "icon": "speaker"
+            }
+          ]
+        }
+      ],
+      "_say_tts": "पिन तो जी-पे को भी नहीं दिखता. एनपीसीआई उसे लॉक करके बैंक भेजता है."
+    },
+    {
+      "say": "पैसा कटता है, दुकान को credit होता है, और speaker बोलता है, प्राप्त हुए.",
+      "shots": [
+        {
+          "at": 0,
+          "type": "flow",
+          "bg": "ink",
+          "from": 2,
+          "to": 3,
+          "nodes": [
+            {
+              "label": "तुम्हारा फ़ोन",
+              "icon": "phone"
+            },
+            {
+              "label": "NPCI",
+              "icon": "switch"
+            },
+            {
+              "label": "तुम्हारा Bank",
+              "icon": "bank"
+            },
+            {
+              "label": "दुकान का Bank",
+              "icon": "bank"
+            },
+            {
+              "label": "दुकान",
+              "icon": "speaker"
+            }
+          ]
+        },
+        {
+          "at": "speaker",
+          "type": "icon",
+          "bg": "accent",
+          "icon": "speaker",
+          "ring": true,
+          "text": "₹20 प्राप्त हुए",
+          "sfx": "ding"
+        }
+      ],
+      "_say_tts": "पैसा कटता है, दुकान को क्रेडिट होता है, और स्पीकर बोलता है, प्राप्त हुए."
+    },
+    {
+      "say": "लेकिन असली खेल यहाँ है.",
+      "shots": [
+        {
+          "at": 0,
+          "type": "slam",
+          "bg": "accent",
+          "text": "TWIST",
+          "hit": true,
+          "riser": true
+        }
+      ],
+      "_say_tts": "लेकिन असली खेल यहाँ है."
+    },
+    {
+      "say": "दुकान के bank को पैसा नहीं मिला. सिर्फ़ एक promise मिला.",
+      "shots": [
+        {
+          "at": 0,
+          "type": "slam",
+          "bg": "ink",
+          "text": "पैसा नहीं मिला",
+          "sfx": "pop"
+        },
+        {
+          "at": "सिर्फ़",
+          "type": "pattern",
+          "bg": "cream",
+          "text": "PROMISE",
+          "sub": "सिर्फ़ एक वादा"
+        }
+      ],
+      "_say_tts": "दुकान के बैंक को पैसा नहीं मिला. सिर्फ़ एक प्रॉमिस मिला."
+    },
+    {
+      "say": "मान लो पाँच सौ करोड़ गए, चार सौ अस्सी आए. तो RBI में बस बीस करोड़ move होते हैं.",
+      "shots": [
+        {
+          "at": 0,
+          "type": "bars",
+          "bg": "ink",
+          "a": {
+            "label": "गए",
+            "value": 500
+          },
+          "b": {
+            "label": "आए",
+            "value": 480
+          },
+          "unit": "करोड़",
+          "result": "सिर्फ़ ₹20 करोड़"
+        }
+      ],
+      "_say_tts": "मान लो पाँच सौ करोड़ गए, चार सौ अस्सी आए. तो आरबीआई में बस बीस करोड़ मूव होते हैं."
+    },
+    {
+      "say": "यह हिसाब, दिन में कई बार settle होता है.",
+      "shots": [
+        {
+          "at": 0,
+          "type": "icon",
+          "bg": "blue",
+          "icon": "rbi",
+          "text": "दिन में कई बार settle"
+        }
+      ],
+      "_say_tts": "यह हिसाब, दिन में कई बार सेटल होता है."
+    },
+    {
+      "say": "तो success का मतलब, transfer नहीं, promise.",
+      "shots": [
+        {
+          "at": 0,
+          "type": "slam",
+          "bg": "cream",
+          "text": "Success =",
+          "sfx": "pop"
+        },
+        {
+          "at": "transfer",
+          "type": "slam",
+          "bg": "accent",
+          "text": "Transfer नहीं\nPROMISE",
+          "hit": true
+        }
+      ],
+      "_say_tts": "तो सक्सेस का मतलब, ट्रांसफ़र नहीं, प्रॉमिस."
+    },
+    {
+      "say": "ऐसे और राज़ के लिए, follow करो.",
+      "shots": [
+        {
+          "at": 0,
+          "type": "slam",
+          "bg": "ink",
+          "text": "Follow करो",
+          "sub": "ऐसे और राज़, हर हफ्ते",
+          "sfx": "ding"
+        }
+      ],
+      "_say_tts": "ऐसे और राज़ के लिए, फ़ॉलो करो."
+    }
+  ],
+  "_render": {
+    "file": "003-upi-kinetic.mp4",
+    "seconds": 52.9,
+    "shots": 17,
+    "avg_shot_s": 3.11
+  }
+}

@@ -1,0 +1,17 @@
+﻿# never commit
+secrets/
+*.key
+token.json
+client_secret*.json
+# large / generated
+footage/
+vendor/
+**/build/
+*.mp4
+*.wav
+*.mp3
+logs/
+state/curio/
+__pycache__/
+*.pyc
+.venv*/

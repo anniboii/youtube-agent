@@ -1,0 +1,663 @@
+{
+  "slug": "004-upi-story",
+  "format": "short",
+  "style": "story",
+  "voice": "hi-IN-SwaraNeural",
+  "voice_rate": "+14%",
+  "brand": "DAILY CURIO",
+  "curio_id": "how-does-upi-move-money-in-2-seconds",
+  "facts_checked": [
+    "NPCI routes every UPI payment (common switch) - Daily Curio sources",
+    "UPI PIN encrypted by NPCI common library keypad; payment app never sees it - UPI CL spec",
+    "Interbank settlement is netted and settled through RBI in batches; 10 settlement cycles/day from 3 Nov 2025 (NPCI OC 222, via Business Today)",
+    "500/480 crore netting is a labelled hypothetical ('maan lo')"
+  ],
+  "youtube": {
+    "title": "₹20 ka UPI kiya… par paisa gaya hi nahi? | UPI ka sach",
+    "description": "Priya ne chai ke ₹20 ka UPI kiya. Success aaya, speaker bola. Par us waqt dukaan wale ke bank ko ek rupaya bhi nahi mila tha. UPI ke 2 seconds, ek kahani mein.\n\nRoz ki cheezon ka sach - follow karo.\n\n#upi #npci #howitworks #dailycurio #shorts",
+    "tags": [
+      "upi kaise kaam karta hai",
+      "upi explained in hindi",
+      "npci",
+      "upi settlement",
+      "how upi works",
+      "gpay",
+      "phonepe",
+      "daily curio"
+    ]
+  },
+  "instagram": {
+    "caption": "₹20 ka UPI kiya, Success aaya… par paisa gaya hi nahi? 🤯\nUPI ke 2 seconds ka asli sach.\n\nSave karo, aur us dost ko bhejo jo UPI ko 'instant transfer' samajhta hai.\n\n#upi #npci #gpay #phonepe #finance #howitworks #dailycurio #hindi"
+  },
+  "scenes": [
+    {
+      "bg": "desk",
+      "props": [
+        {
+          "id": "priya",
+          "type": "avatar",
+          "x": 560,
+          "y": 1140,
+          "size": 620,
+          "hair": "long",
+          "shirt": "orange",
+          "expr": "neutral",
+          "states": {
+            "1": {
+              "expr": "happy"
+            },
+            "3": {
+              "expr": "surprised"
+            }
+          },
+          "_t": -1.0
+        },
+        {
+          "id": "qr",
+          "type": "qr",
+          "x": 1180,
+          "y": 1180,
+          "name": "Ramesh Tea Stall",
+          "_t": -1.0
+        },
+        {
+          "id": "phone",
+          "type": "phone",
+          "x": 560,
+          "y": 1840,
+          "screen": {
+            "kind": "pay",
+            "to": "Ramesh Tea Stall",
+            "amount": "₹20",
+            "initial": "R"
+          },
+          "states": {
+            "1": {
+              "screen": {
+                "kind": "success",
+                "amount": "₹20",
+                "to": "to Ramesh Tea Stall"
+              }
+            }
+          },
+          "_t": -1.0
+        },
+        {
+          "id": "speaker",
+          "type": "speaker",
+          "x": 1180,
+          "y": 1900,
+          "show": 2,
+          "led": "₹20 RECEIVED",
+          "_t": 7.710000000000001
+        },
+        {
+          "id": "sach",
+          "type": "chip",
+          "x": 800,
+          "y": 420,
+          "show": 3,
+          "text": "SACH YEH HAI",
+          "color": "orange",
+          "size": 56,
+          "_t": 11.430000000000001
+        }
+      ],
+      "lines": [
+        {
+          "say": "प्रिया ने चाय के बीस रुपये का UPI किया.",
+          "cap": "Priya ne chai ke **₹20** ka UPI kiya.",
+          "focus": "priya",
+          "zoom": 1.45,
+          "dy": 380,
+          "_say_tts": "प्रिया ने चाय के बीस रुपये का यू पी आई किया."
+        },
+        {
+          "say": "Screen पर आया, payment successful.",
+          "cap": "Screen par aaya: **Payment Successful**.",
+          "focus": "phone",
+          "zoom": 2.0,
+          "_say_tts": "स्क्रीन पर आया, पेमेंट सक्सेसफ़ुल."
+        },
+        {
+          "say": "Speaker बोला, बीस रुपये received.",
+          "cap": "Speaker bola: **₹20 received**.",
+          "focus": "speaker",
+          "zoom": 1.9,
+          "_say_tts": "स्पीकर बोला, बीस रुपये रिसीव्ड."
+        },
+        {
+          "say": "पर उस वक़्त, रमेश के bank को एक रुपया भी नहीं मिला था.",
+          "cap": "Par us waqt, Ramesh ke bank ko **ek rupaya bhi nahi** mila tha.",
+          "zoom": 1.0,
+          "_say_tts": "पर उस वक़्त, रमेश के बैंक को एक रुपया भी नहीं मिला था."
+        }
+      ],
+      "_cam": [
+        [
+          0.0,
+          560,
+          1520,
+          1.45
+        ],
+        [
+          3.97,
+          560,
+          1840,
+          2.0
+        ],
+        [
+          7.66,
+          1180,
+          1900,
+          1.9
+        ],
+        [
+          11.38,
+          800.0,
+          1422.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "bg": "cream",
+      "props": [
+        {
+          "id": "chip",
+          "type": "chip",
+          "x": 800,
+          "y": 330,
+          "text": "2 SECOND · SLOW MOTION",
+          "color": "teal",
+          "size": 50,
+          "_t": 16.840000000000003
+        },
+        {
+          "id": "phone",
+          "type": "phone",
+          "x": 420,
+          "y": 950,
+          "w": 340,
+          "h": 680,
+          "screen": {
+            "kind": "pay",
+            "to": "Ramesh Tea Stall",
+            "amount": "₹20"
+          },
+          "states": {
+            "2": {
+              "screen": {
+                "kind": "pin"
+              }
+            }
+          },
+          "_t": 16.840000000000003
+        },
+        {
+          "id": "a1",
+          "type": "arrow",
+          "x": 790,
+          "y": 950,
+          "len": 220,
+          "show": 1,
+          "_t": 21.220000000000002
+        },
+        {
+          "id": "npci",
+          "type": "hub",
+          "x": 1170,
+          "y": 950,
+          "label": "NPCI",
+          "show": 1,
+          "_t": 21.220000000000002
+        },
+        {
+          "id": "a2",
+          "type": "arrow",
+          "x": 790,
+          "y": 1370,
+          "len": 420,
+          "angle": 130,
+          "show": 2,
+          "_t": 29.540000000000003
+        },
+        {
+          "id": "pbank",
+          "type": "bank",
+          "x": 420,
+          "y": 1780,
+          "label": "Priya ka Bank",
+          "show": 2,
+          "_t": 29.540000000000003
+        },
+        {
+          "id": "a3",
+          "type": "arrow",
+          "x": 1170,
+          "y": 1370,
+          "len": 420,
+          "angle": 90,
+          "show": 3,
+          "_t": 36.760000000000005
+        },
+        {
+          "id": "rbank",
+          "type": "bank",
+          "x": 1170,
+          "y": 1780,
+          "label": "Ramesh ka Bank",
+          "color": "orange",
+          "show": 3,
+          "_t": 36.760000000000005
+        },
+        {
+          "id": "cut",
+          "type": "chip",
+          "x": 420,
+          "y": 2060,
+          "text": "-₹20",
+          "color": "red",
+          "size": 54,
+          "show": 3,
+          "_t": 36.760000000000005
+        },
+        {
+          "id": "cr",
+          "type": "chip",
+          "x": 1170,
+          "y": 2060,
+          "text": "+₹20 CREDIT",
+          "color": "green",
+          "size": 54,
+          "show": 3,
+          "_t": 36.760000000000005
+        }
+      ],
+      "lines": [
+        {
+          "say": "चलो, उन दो seconds को slow motion में देखते हैं.",
+          "cap": "Chalo, un **2 seconds** ko slow motion mein dekhte hain.",
+          "focus": "chip",
+          "zoom": 1.25,
+          "dy": 500,
+          "_say_tts": "चलो, उन दो सेकंड को स्लो मोशन में देखते हैं."
+        },
+        {
+          "say": "प्रिया का phone, NPCI को request भेजता है. हर UPI payment इसी switch से गुज़रता है.",
+          "cap": "Priya ka phone **NPCI** ko request bhejta hai. Har UPI payment isi **switch** se guzarta hai.",
+          "focus": "npci",
+          "zoom": 1.45,
+          "dx": -380,
+          "_say_tts": "प्रिया का फ़ोन, एन पी सी आई को रिक्वेस्ट भेजता है. हर यू पी आई पेमेंट इसी स्विच से गुज़रता है."
+        },
+        {
+          "say": "PIN तो GPay को भी नहीं दिखता. NPCI का keypad उसे lock करके bank भेजता है.",
+          "cap": "**PIN** GPay ko bhi nahi dikhta. NPCI ka keypad use **lock** karke bank bhejta hai.",
+          "focus": "a2",
+          "zoom": 1.2,
+          "dy": -80,
+          "_say_tts": "पिन तो जी-पे को भी नहीं दिखता. एन पी सी आई का की-पैड उसे लॉक करके बैंक भेजता है.",
+          "dx": 0
+        },
+        {
+          "say": "प्रिया के bank से बीस रुपये कटते हैं, और NPCI रमेश के bank को बोलता है, credit कर दो.",
+          "cap": "Priya ke bank se **₹20 katte** hain, aur NPCI Ramesh ke bank ko bolta hai: **credit kar do**.",
+          "focus": "npci",
+          "zoom": 1.15,
+          "dx": -370,
+          "dy": 600,
+          "_say_tts": "प्रिया के बैंक से बीस रुपये कटते हैं, और एन पी सी आई रमेश के बैंक को बोलता है, क्रेडिट कर दो."
+        }
+      ],
+      "_cam": [
+        [
+          16.840000000000003,
+          800,
+          830,
+          1.25
+        ],
+        [
+          21.170000000000005,
+          790,
+          950,
+          1.45
+        ],
+        [
+          29.490000000000006,
+          790,
+          1290,
+          1.2
+        ],
+        [
+          36.71000000000001,
+          800,
+          1550,
+          1.15
+        ]
+      ]
+    },
+    {
+      "bg": "cream",
+      "props": [
+        {
+          "id": "chip",
+          "type": "chip",
+          "x": 800,
+          "y": 380,
+          "text": "ASLI KHEL",
+          "color": "orange",
+          "size": 60,
+          "_t": 44.77000000000001
+        },
+        {
+          "id": "promise",
+          "type": "sticky",
+          "x": 800,
+          "y": 800,
+          "text": "Paisa nahi, sirf PROMISE",
+          "size": 70,
+          "w": 760,
+          "_t": 44.77000000000001
+        },
+        {
+          "id": "ledger",
+          "type": "ledger",
+          "x": 800,
+          "y": 1620,
+          "show": 1,
+          "title": "NPCI KA HISAAB",
+          "reveal": 0,
+          "rows": [
+            [
+              "Pehla bank → Doosra",
+              "₹500 cr",
+              "ink"
+            ],
+            [
+              "Doosra bank → Pehla",
+              "₹480 cr",
+              "ink"
+            ],
+            [
+              "Asli movement (RBI)",
+              "₹20 cr",
+              "total"
+            ]
+          ],
+          "states": {
+            "2": {
+              "reveal": 2
+            },
+            "3": {
+              "reveal": 3
+            }
+          },
+          "_t": 49.11000000000001
+        },
+        {
+          "id": "kai",
+          "type": "chip",
+          "x": 800,
+          "y": 2280,
+          "show": 4,
+          "text": "DIN MEIN KAI BAAR",
+          "color": "mustard",
+          "fg": "ink",
+          "size": 58,
+          "_t": 64.36000000000001
+        }
+      ],
+      "lines": [
+        {
+          "say": "रमेश के bank को पैसा नहीं, एक promise मिला.",
+          "cap": "Ramesh ke bank ko paisa nahi, ek **promise** mila.",
+          "focus": "promise",
+          "zoom": 1.8,
+          "_say_tts": "रमेश के बैंक को पैसा नहीं, एक प्रॉमिस मिला."
+        },
+        {
+          "say": "NPCI दिन भर banks का हिसाब रखता है.",
+          "cap": "NPCI din bhar banks ka **hisaab** rakhta hai.",
+          "focus": "ledger",
+          "zoom": 1.45,
+          "_say_tts": "एन पी सी आई दिन भर बैंक्स का हिसाब रखता है."
+        },
+        {
+          "say": "मान लो एक bank से पाँच सौ करोड़ गए, और दूसरे से चार सौ अस्सी करोड़ आए.",
+          "cap": "Maan lo ek bank se **₹500 crore** gaye, doosre se **₹480 crore** aaye.",
+          "focus": "ledger",
+          "zoom": 1.55,
+          "_say_tts": "मान लो एक बैंक से पाँच सौ करोड़ गए, और दूसरे से चार सौ अस्सी करोड़ आए."
+        },
+        {
+          "say": "तो RBI में सिर्फ़ बीस करोड़ move होते हैं.",
+          "cap": "Toh RBI mein sirf **₹20 crore** move hote hain.",
+          "focus": "ledger",
+          "zoom": 1.7,
+          "dy": 120,
+          "_say_tts": "तो आर बी आई में सिर्फ़ बीस करोड़ मूव होते हैं."
+        },
+        {
+          "say": "और यह हिसाब, दिन में कई बार settle होता है.",
+          "cap": "Aur yeh hisaab **din mein kai baar** settle hota hai.",
+          "focus": "kai",
+          "zoom": 1.5,
+          "dy": -300,
+          "_say_tts": "और यह हिसाब, दिन में कई बार सेटल होता है."
+        }
+      ],
+      "_cam": [
+        [
+          44.77000000000001,
+          800,
+          800,
+          1.8
+        ],
+        [
+          49.06000000000001,
+          800,
+          1620,
+          1.45
+        ],
+        [
+          53.16000000000001,
+          800,
+          1620,
+          1.55
+        ],
+        [
+          59.92000000000001,
+          800,
+          1740,
+          1.7
+        ],
+        [
+          64.31,
+          800,
+          1980,
+          1.5
+        ]
+      ]
+    },
+    {
+      "bg": "desk",
+      "props": [
+        {
+          "id": "priya",
+          "type": "avatar",
+          "x": 560,
+          "y": 1140,
+          "size": 620,
+          "hair": "long",
+          "shirt": "orange",
+          "expr": "surprised",
+          "states": {
+            "1": {
+              "expr": "happy"
+            }
+          },
+          "_t": 69.10000000000001
+        },
+        {
+          "id": "phone",
+          "type": "phone",
+          "x": 560,
+          "y": 1840,
+          "screen": {
+            "kind": "success",
+            "amount": "₹20",
+            "to": "to Ramesh Tea Stall"
+          },
+          "_t": 69.10000000000001
+        },
+        {
+          "id": "note",
+          "type": "sticky",
+          "x": 1170,
+          "y": 760,
+          "show": 1,
+          "text": "Success = PROMISE",
+          "size": 60,
+          "w": 560,
+          "tilt": 4,
+          "_t": 72.64000000000001
+        }
+      ],
+      "lines": [
+        {
+          "say": "तो अगली बार payment successful देखो,",
+          "cap": "Toh agli baar **Payment Successful** dekho,",
+          "focus": "phone",
+          "zoom": 1.8,
+          "_say_tts": "तो अगली बार पेमेंट सक्सेसफ़ुल देखो,"
+        },
+        {
+          "say": "याद रखना, वो transfer नहीं, promise है.",
+          "cap": "yaad rakhna: woh transfer nahi, **promise** hai.",
+          "focus": "note",
+          "zoom": 1.5,
+          "dx": -300,
+          "dy": 250,
+          "_say_tts": "याद रखना, वो ट्रांसफ़र नहीं, प्रॉमिस है."
+        }
+      ],
+      "_cam": [
+        [
+          69.10000000000001,
+          560,
+          1840,
+          1.8
+        ],
+        [
+          72.59,
+          870,
+          1010,
+          1.5
+        ]
+      ]
+    },
+    {
+      "bg": "teal",
+      "props": [
+        {
+          "id": "ask",
+          "type": "title",
+          "x": 800,
+          "y": 820,
+          "text": "AGLI BAAR\nKOI POOCHHE,",
+          "color": "mustard",
+          "size": 96,
+          "_t": 77.36000000000001
+        },
+        {
+          "id": "aura",
+          "type": "sticky",
+          "x": 800,
+          "y": 1500,
+          "show": 1,
+          "color": "paper",
+          "size": 56,
+          "w": 1060,
+          "tilt": -2,
+          "text": "\"UPI instant lagta hai, kyunki banks ek doosre pe bharosa karte hain. Paisa baad mein, bulk mein jaata hai.\"",
+          "_t": 81.05000000000003
+        },
+        {
+          "id": "follow",
+          "type": "chip",
+          "x": 800,
+          "y": 2200,
+          "show": 3,
+          "text": "FOLLOW · DAILY CURIO",
+          "color": "orange",
+          "size": 60,
+          "_t": 90.38000000000002
+        }
+      ],
+      "lines": [
+        {
+          "say": "और अगली बार कोई पूछे, तो बोलना,",
+          "cap": "Aur agli baar koi pooche, toh bolna:",
+          "focus": "ask",
+          "zoom": 1.5,
+          "_say_tts": "और अगली बार कोई पूछे, तो बोलना,"
+        },
+        {
+          "say": "UPI instant लगता है, क्योंकि banks एक दूसरे पे भरोसा करते हैं.",
+          "cap": "\"UPI instant lagta hai, kyunki banks ek doosre pe **bharosa** karte hain.\"",
+          "focus": "aura",
+          "zoom": 1.35,
+          "_say_tts": "यू पी आई इंस्टेंट लगता है, क्योंकि बैंक्स एक दूसरे पे भरोसा करते हैं."
+        },
+        {
+          "say": "पैसा बाद में, bulk में जाता है.",
+          "cap": "\"Paisa baad mein, **bulk** mein jaata hai.\"",
+          "focus": "aura",
+          "zoom": 1.45,
+          "_say_tts": "पैसा बाद में, बल्क में जाता है."
+        },
+        {
+          "say": "रोज़ की ऐसी चीज़ों का सच जानने के लिए, follow करो.",
+          "cap": "Roz ki aisi cheezon ka sach jaanne ke liye, **follow** karo.",
+          "focus": "follow",
+          "zoom": 1.5,
+          "dy": -300,
+          "_say_tts": "रोज़ की ऐसी चीज़ों का सच जानने के लिए, फ़ॉलो करो."
+        }
+      ],
+      "_cam": [
+        [
+          77.36000000000001,
+          800,
+          820,
+          1.5
+        ],
+        [
+          81.00000000000001,
+          800,
+          1500,
+          1.35
+        ],
+        [
+          86.90000000000002,
+          800,
+          1500,
+          1.45
+        ],
+        [
+          90.33000000000001,
+          800,
+          1900,
+          1.5
+        ]
+      ]
+    }
+  ],
+  "_render": {
+    "file": "004-upi-story.mp4",
+    "seconds": 95.7,
+    "lines": 19,
+    "scenes": 5
+  }
+}

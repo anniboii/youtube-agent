@@ -1,0 +1,185 @@
+{
+  "slug": "001-iitb-andar-kya-hai",
+  "format": "short",
+  "title": "JEE chhodne se pehle yeh dekh lo | IIT Bombay andar se",
+  "description": "Agar tum JEE chhodne ka soch rahe ho, toh pehle dekh lo andar kya hai. IIT Bombay - hostel, mess, fests aur woh shaamein jo koi tour mein nahi dikhata.\n\nFollow karo, har hafte andar ki ek aur cheez.\n\n#iitbombay #jee #jee2027 #iit #collegelife #shorts",
+  "tags": [
+    "iit bombay",
+    "iit bombay campus",
+    "jee motivation",
+    "jee 2027",
+    "iit campus tour",
+    "iitb",
+    "jee advanced",
+    "iit life"
+  ],
+  "thumb_text": "IIT BOMBAY\nANDAR SE",
+  "thumb_tags": [
+    "campus"
+  ],
+  "hook_score": {
+    "hook": "Agar tum JEE chhodne ka soch rahe ho, toh pehle dekh lo andar kya hai. Jo koi nahi dikhata.",
+    "verdict": 60,
+    "band": "WORKABLE"
+  },
+  "beats": [
+    {
+      "say": "अगर तुम JEE छोड़ने का सोच रहे हो, तो पहले देख लो अंदर क्या है. जो कोई नहीं दिखाता.",
+      "caption": "Agar tum JEE chhodne ka soch rahe ho, toh pehle dekh lo andar kya hai. Jo koi nahi dikhata.",
+      "visual": {
+        "type": "footage",
+        "tags": [
+          "campus-outdoor",
+          "aerial",
+          "building"
+        ]
+      },
+      "_footage": [
+        [
+          "keD7cwYl6Lg.mp4",
+          0.5
+        ],
+        [
+          "QyziZXk0M2E.mp4",
+          328.5
+        ],
+        [
+          "fA8W1jdxCvM.mp4",
+          343.5
+        ]
+      ]
+    },
+    {
+      "say": "यह IIT Bombay है. मैं यहाँ रह चुका हूँ. चलो, अंदर चलते हैं.",
+      "caption": "Yeh IIT Bombay hai. Main yahan reh chuka hoon. Chalo, andar chalte hain.",
+      "visual": {
+        "type": "footage",
+        "tags": [
+          "campus-outdoor",
+          "greenery",
+          "road"
+        ]
+      },
+      "_footage": [
+        [
+          "fA8W1jdxCvM.mp4",
+          381.5
+        ],
+        [
+          "fA8W1jdxCvM.mp4",
+          199.5
+        ],
+        [
+          "QyziZXk0M2E.mp4",
+          18.0
+        ]
+      ]
+    },
+    {
+      "say": "यह hostel. यहाँ रात के दो बजे भी कोई ना कोई जाग रहा होता है.",
+      "caption": "Yeh hostel. Yahan raat ke do baje bhi koi na koi jaag raha hota hai.",
+      "visual": {
+        "type": "footage",
+        "tags": [
+          "hostel",
+          "corridor",
+          "night",
+          "room"
+        ]
+      },
+      "_footage": [
+        [
+          "fA8W1jdxCvM.mp4",
+          189.5
+        ],
+        [
+          "fA8W1jdxCvM.mp4",
+          203.5
+        ]
+      ]
+    },
+    {
+      "say": "यह mess. खाना कभी घर जैसा नहीं होता, पर दोस्त यहीं बनते हैं.",
+      "caption": "Yeh mess. Khana kabhi ghar jaisa nahi hota, par dost yahin bante hain.",
+      "visual": {
+        "type": "footage",
+        "tags": [
+          "mess",
+          "food"
+        ]
+      },
+      "_footage": [
+        [
+          "orE4tlusQF0.mp4",
+          100.5
+        ],
+        [
+          "orE4tlusQF0.mp4",
+          120.5
+        ]
+      ]
+    },
+    {
+      "say": "और यह fests. Holi, रातों की bonfire. जहाँ पढ़ाई के बाद असली college शुरू होता है.",
+      "caption": "Aur yeh fests. Holi, raaton ki bonfire. Jahan padhai ke baad asli college shuru hota hai.",
+      "visual": {
+        "type": "footage",
+        "tags": [
+          "fest",
+          "celebration",
+          "holi",
+          "night"
+        ]
+      },
+      "_footage": [
+        [
+          "1pVTUesK65s.mp4",
+          37.0
+        ],
+        [
+          "1pVTUesK65s.mp4",
+          25.0
+        ],
+        [
+          "1pVTUesK65s.mp4",
+          130.5
+        ]
+      ]
+    },
+    {
+      "say": "यही है वो चीज़, जिसके लिए तुम अभी पढ़ रहे हो. तो band मत करो.",
+      "caption": "Yahi hai woh cheez, jiske liye tum abhi padh rahe ho. Toh band mat karo.",
+      "visual": {
+        "type": "text",
+        "text": "BAND MAT KARO.",
+        "sub": "Yahi hai woh cheez jiske liye tum padh rahe ho"
+      }
+    },
+    {
+      "say": "Follow करो. हर हफ्ते अंदर की एक और चीज़ दिखाऊँगा.",
+      "caption": "Follow karo. Har hafte andar ki ek aur cheez dikhaunga.",
+      "visual": {
+        "type": "footage",
+        "tags": [
+          "campus-outdoor",
+          "greenery",
+          "rain"
+        ]
+      },
+      "_footage": [
+        [
+          "fA8W1jdxCvM.mp4",
+          338.5
+        ],
+        [
+          "fA8W1jdxCvM.mp4",
+          326.5
+        ]
+      ]
+    }
+  ],
+  "_render": {
+    "file": "001-iitb-andar-kya-hai.mp4",
+    "seconds": 50.4
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "channel": "https://www.youtube.com/@AniruddhGoyalIITB",
+  "voice": "hi-IN-SwaraNeural",
+  "voice_rate": "+20%",
+  "voice_alternates": [
+    "hi-IN-MadhurNeural",
+    "en-IN-NeerjaNeural"
+  ],
+  "long": {
+    "w": 1920,
+    "h": 1080
+  },
+  "short": {
+    "w": 1080,
+    "h": 1920
+  },
+  "caption_font": "C:/Windows/Fonts/seguibl.ttf",
+  "title_font": "C:/Windows/Fonts/ariblk.ttf",
+  "accent": "#FFD23F",
+  "clip_seconds": 3.5,
+  "upload_privacy": "private",
+  "category_id": "27",
+  "default_language": "hi",
+  "contains_synthetic_media": true
+}
