@@ -535,7 +535,7 @@ def main():
     n_in = mix_in.count("[")
     af = pre + f"{mix_in}amix=inputs={n_in}:normalize=0:duration=first,loudnorm=I=-14:TP=-1.5:LRA=9[a]" if n_in > 1 else \
         "[1:a]loudnorm=I=-14:TP=-1.5:LRA=9[a]"
-    cmd += ["-filter_complex", f"[0:v]ass=stext.ass:shaping=complex:fontsdir={os.path.relpath(FONT_DIR, build).replace(os.sep, "/")}[v];{af}", "-map", "[v]", "-map", "[a]",
+    cmd += ["-filter_complex", f"[0:v]ass=stext.ass:shaping=complex:fontsdir={os.path.relpath(FONT_DIR, build).replace(os.sep, chr(47))}[v];{af}", "-map", "[v]", "-map", "[a]",
             "-c:v", "libx264", "-preset", "veryfast", "-crf", "19", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-shortest", final]
     log = open(os.path.join(build, "sffmpeg.log"), "w", encoding="utf-8")
     proc = subprocess.Popen(cmd, stdin=subprocess.PIPE, stderr=log, cwd=build)
