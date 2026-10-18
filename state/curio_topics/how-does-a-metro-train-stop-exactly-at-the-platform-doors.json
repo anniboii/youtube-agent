@@ -1,0 +1,74 @@
+{
+  "aura": "A metro train doesn't really know where it is. It counts wheel turns, which slowly drift, and radio tags under the track keep correcting it. By the platform it's accurate to a few centimetres, which is the only reason those glass doors can line up at all.",
+  "category": "City & Infra",
+  "createdAt": 1791084590754,
+  "date": "2026-10-04",
+  "facts": [
+    "Between stations, a metro train estimates its position by **counting wheel turns**. It drifts as wheels wear and slide, so it isn't exact.",
+    "Passive **balises** under the track (no battery, like a FASTag) tell the train its exact position and reset the drift.",
+    "Full-height platform screen doors need the train to stop within roughly **±30 cm**. That's about 0.1% of a 250 m braking distance from 80 km/h.",
+    "Delhi's Magenta Line got India's first platform screen doors (2017) and its first driverless metro service (2020)."
+  ],
+  "hook": "On Delhi Metro's Magenta Line, a 6-car train braking from 80 km/h has to stop within about a hand's width of a painted mark, and there's no driver in the cab. The train doesn't actually know where it is most of the time. It's guessing, and then the track corrects it.",
+  "minutes": 4,
+  "origin": "daily",
+  "read": true,
+  "readAt": "2026-10-05T21:25:06.048Z",
+  "sections": [
+    {
+      "body": "Stand on a Magenta or Pink Line platform in Delhi and you're behind a wall of glass: **platform screen doors**. The Magenta Line was the first in India to get them in 2017, and it was the line that launched India's first driverless metro service in December 2020.\n\nThose glass doors change everything about stopping. On an open platform, a train that stops a metre long is a minor annoyance. With screen doors, a train door that ends up behind a glass panel simply can't let anyone out. Industry guidance puts the tolerance at roughly **±30 cm for full-height screen doors** and about ±50 cm for half-height ones. Human drivers lining up with a marker board typically manage something like ±1 to 2 m on a good day.\n\nSo the computer has to do it. Not occasionally. Every stop, at every station, all day.",
+      "h": "The glass wall that leaves no room for error"
+    },
+    {
+      "body": "Here's the counterintuitive part: between stations, the train mostly works out its position the way you'd estimate distance walked by counting steps. Sensors on the axles count wheel rotations (called **odometry**), sometimes helped by a radar pointed at the track. Multiply rotations by wheel circumference and you get distance travelled.\n\nThe trouble is that this guess slowly goes wrong. Steel wheels wear down and get re-profiled, so their circumference changes. During hard braking, especially on wet track, wheels can slide a little, which means they turn less than the distance actually covered. A patent from a rail signalling supplier lists exactly these errors: wheel slide while braking, wrong wheel circumference, and fuzziness in reading the trackside markers. It notes that older setups could only manage around 1 m of stopping accuracy because of them.\n\nPut numbers on it. Say the train thinks its wheels are 1% bigger than they really are. Over 1.2 km between stations, that's a 12 m error. That's half a coach. Nowhere near the 30 cm the screen doors demand.",
+      "h": "The train is counting wheel turns, and that drifts"
+    },
+    {
+      "body": "The fix is lying between the rails: small boxes called **balises** or transponders. Each one sits at a precisely surveyed spot and stores just one thing, essentially \"I am exactly here.\"\n\nLike a FASTag, most of these are passive with no battery. A reader under the train sends out a radio signal as it passes over, which powers the tag just long enough for it to reply with its ID and position. The train's computer then snaps its estimate back to the truth, wiping out the drift it built up from counting wheel turns.\n\nStations get extra attention. Several balises are typically packed into the stretch just before and along the platform, so the train gets fresh position fixes in the final few hundred metres, exactly when precision matters most. Suppliers say this can position a train opposite the screen-door reference line to within a few centimetres. One newer radar-plus-continuous-balise system was tested at better than 5 cm.",
+      "h": "The track whispers 'you are here'"
+    },
+    {
+      "body": "Knowing where you are is half the job. The other half is braking smoothly to a precise point. The **Automatic Train Operation** (ATO) software computes a braking curve, the ideal speed for every metre left to the stop mark, and keeps redrawing it as new position fixes come in.\n\nA worked example: a train at 80 km/h is moving at about 22 m/s. At a comfortable braking rate of around 1 m/s², it needs roughly 22 seconds and about 250 m to stop (distance = speed² ÷ 2 × deceleration). The target is ±30 cm at the end of a 250 m slowdown, which is an error of about 0.1%. A rush-hour train packed with hundreds of extra passengers is many tonnes heavier and brakes differently, so the system corrects continuously as it goes rather than \"aiming\" once.\n\nOnly when the train confirms it is stopped inside the window does it send a \"doors release\" signal. The screen doors and train doors then open together. If any screen door fails to close and lock, the train isn't allowed to leave.",
+      "h": "Braking is a curve, recalculated on the fly"
+    },
+    {
+      "body": "On fully automated lines (\"Grade of Automation 4\"), nothing: there's no one in the cab, and the Operations Control Centre watches the whole line. On many semi-automatic metro systems around the world (GoA2), the train already starts, runs and stops by itself. The operator mainly handles the doors, presses start, and takes over if something goes wrong.\n\nIt isn't flawless. In December 2017, during a trial run before the Magenta Line opened, a driverless test train crashed through a wall at the Kalindi Kunj depot. Engineers spend years on testing for exactly this reason. But on a normal day, the reason your door lines up perfectly with the glass is a quiet mix of wheel-counting, radio tags under the track, and constant braking maths.",
+      "h": "So what does the driver do?"
+    }
+  ],
+  "sources": [
+    {
+      "t": "Railway Gazette: Radar positioning system provides precise stopping without CBTC",
+      "u": "https://www.railwaygazette.com/technology/radar-positioning-system-provides-precise-stopping-without-cbtc/70070.article"
+    },
+    {
+      "t": "RailwayNews: Platform screen doors, types and how they work",
+      "u": "https://railwaynews.net/wiki/what-is-a-platform-screen-door-psd-types-how-they-work-benefits-explained"
+    },
+    {
+      "t": "Patent US11708100B2: Detecting and optimizing the stopping-point accuracy of a vehicle",
+      "u": "https://patents.google.com/patent/US11708100"
+    },
+    {
+      "t": "TagMaster: Rail solutions (CBTC track transponders)",
+      "u": "https://www.tagmaster.com/wp-content/uploads/2017/08/Rail-Solutions_11-351-05.pdf"
+    },
+    {
+      "t": "WION: Magenta Line PSDs, hi-tech signalling among firsts for DMRC",
+      "u": "https://www.wionews.com/india-news/magenta-line-psds-hi-tech-signalling-among-firsts-for-dmrc-27497"
+    },
+    {
+      "t": "ETV Bharat: India's first driverless metro and its functioning",
+      "u": "https://etvbharat.com/english/bharat/explainer-indias-first-driverless-metro-and-its-functioning/na20201227165722188"
+    },
+    {
+      "t": "Wikipedia: Automatic train operation",
+      "u": "https://en.wikipedia.org/wiki/Automatic_train_operation"
+    },
+    {
+      "t": "The Quint: Unmanned Magenta Line train crashes into wall during trial",
+      "u": "https://thequint.com/news/india/unmanned-train-in-magenta-line-delhi-metro-crashes-into-wall-during-trial-run"
+    }
+  ],
+  "title": "How does a metro train stop exactly at the platform doors?"
+}

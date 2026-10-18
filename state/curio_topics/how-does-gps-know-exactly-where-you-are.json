@@ -1,0 +1,58 @@
+{
+  "aura": "GPS isn't really a location system, it's a clock system. Your phone just times radio signals from four satellites, and the satellites' clocks are pre-adjusted for Einstein's relativity, otherwise Google Maps would be off by 10 km by tomorrow.",
+  "category": "Science Around You",
+  "createdAt": 1791689409820,
+  "date": "2026-10-11",
+  "facts": [
+    "GPS is **receive-only**: your phone never transmits to the satellites, which is why billions of devices can use it at once.",
+    "Light travels about **30 cm per nanosecond**, so a timing error of one microsecond puts you 300 m off.",
+    "Your phone needs **four satellites**, not three: the fourth solves for its own cheap clock's error.",
+    "Relativity makes GPS satellite clocks gain about **38 microseconds a day**; uncorrected, your position would drift about **10 km daily**."
+  ],
+  "hook": "Your phone never talks to GPS satellites, and they have no idea where you are. Your location comes from a stopwatch, and without Einstein's relativity it would drift about 10 km every day.",
+  "minutes": 4,
+  "origin": "daily",
+  "read": false,
+  "readAt": null,
+  "sections": [
+    {
+      "body": "Open Google Maps in an Ola and the blue dot snaps to your lane. It feels like a satellite is watching you. It isn't. **GPS is one-way.** About 30 US satellites, each roughly 20,000 km up and circling Earth twice a day, do nothing but shout the same thing over and over: \"I am satellite number X, this is exactly where I am, and this is exactly what time it is.\"\n\nYour phone never talks back. It doesn't send anything to the satellites, and the satellites have no idea you exist. A billion phones can use GPS at once because the system is a broadcast, like radio, not a conversation. Everything clever happens inside your phone.",
+      "h": "Your phone is just listening"
+    },
+    {
+      "body": "The trick is that radio signals travel at the speed of light, about 3,00,000 km per second, and the satellite tells you when it sent the message. Your phone notes when it arrived. The gap is the travel time, and travel time multiplied by the speed of light is the distance.\n\nWorked example: a signal leaves a satellite and reaches your phone in Bengaluru 0.0700 seconds later. Multiply by 3,00,000 km/s and you're 21,000 km from that satellite. That alone only puts you somewhere on a giant imaginary sphere around it. Do the same with a second satellite and you're on the circle where two spheres overlap. A third narrows it to a point. This is **trilateration**: distances, not angles and not signal strength.\n\nNow the scary part. Light covers about **30 cm in a single nanosecond** (a billionth of a second). If your timing is off by just one microsecond, your distance is off by 300 metres. GPS is really a machine for measuring time insanely precisely, with location as the side effect.",
+      "h": "Location is really a stopwatch"
+    },
+    {
+      "body": "Satellites carry atomic clocks that are reportedly accurate to around a nanosecond. Your phone has a cheap quartz clock that drifts by far more than that. So how does it measure travel times to the nanosecond?\n\nIt cheats elegantly. Your phone treats its own clock error as one more unknown, alongside latitude, longitude and altitude. Four unknowns need four equations, so it uses **at least four satellites**. Solve them together and the phone gets its position and the exact time, borrowed from the atomic clocks overhead. Usually 6 to 12 satellites are visible, and the extras sharpen the answer.\n\nThis is why GPS is also the world's best free clock. Telecom towers, stock exchanges and power grids use GPS timing to stay in sync, not just for maps.",
+      "h": "The fourth satellite fixes your cheap clock"
+    },
+    {
+      "body": "Here's where it gets wild. According to physicist Richard Pogge's widely cited explainer, a GPS satellite's clock behaves differently from one on the ground for two reasons. It moves at about 14,000 km/h, and Einstein's special relativity says moving clocks run slow, by about **7 microseconds a day**. But it also sits far higher in Earth's gravity, and general relativity says clocks in weaker gravity run fast, by about **45 microseconds a day**.\n\nNet result: satellite clocks gain roughly **38 microseconds every day**. Sounds tiny. Run the numbers: 38 microseconds × 300 metres per microsecond = about 11 km. Left uncorrected, GPS would drift by roughly **10 km a day**, and a navigation fix would go wrong within minutes. Your Swiggy rider would end up in the next suburb by lunch.\n\nSo engineers built the correction into the satellites: their clocks are deliberately set to tick slightly slower before launch, so that once in orbit they match ground time. Every time you book a cab, you're relying on relativity being correct.",
+      "h": "Einstein is in your pocket"
+    },
+    {
+      "body": "Under open sky, GPS-enabled smartphones are typically accurate to about **5 metres**, according to the US government's GPS.gov. In a Mumbai lane between tall buildings, signals bounce off glass and concrete before reaching you, adding extra travel time, which the phone reads as extra distance. That's why your dot jumps across the road. Indoors the signal is very weak, so phones lean on Wi-Fi and cell-tower data instead.\n\nGPS is also American, which worried India after it was reportedly denied GPS data during the 1999 Kargil conflict. India built **NavIC**, a regional system covering India and about 1,500 km around it, and some recent phones support it. But it has had a rough run: atomic clock failures have reportedly left only a few satellites fully working, and one launched in January 2025 failed to reach its planned orbit. ISRO plans replacements with home-built clocks. Which proves the point: in satellite navigation, everything comes down to the clock.",
+      "h": "Why the blue dot still wobbles, and India's own GPS"
+    }
+  ],
+  "sources": [
+    {
+      "t": "Real-World Relativity: The GPS Navigation System (Richard Pogge, Ohio State)",
+      "u": "https://www.astronomy.ohio-state.edu/pogge.1/Ast162/Unit5/gps.html"
+    },
+    {
+      "t": "GPS Accuracy (GPS.gov archive)",
+      "u": "https://archive.gps.gov/systems/gps/performance/accuracy/"
+    },
+    {
+      "t": "Clocks calling time on NavIC (SuperKalam current affairs, Aug 2025)",
+      "u": "https://superkalam.com/current-affairs/24-08-2025/clocks-calling-time-on-navic-isro-now-building-indigenous-devices-pg11-47c76d07-8f83-4476-9bf6-dc3df0b0b4c7"
+    },
+    {
+      "t": "GPS and relativity (Tech for Space)",
+      "u": "https://www.techforspace.com/missions/galileo/gps-and-relativity/"
+    }
+  ],
+  "title": "How does GPS know exactly where you are?"
+}

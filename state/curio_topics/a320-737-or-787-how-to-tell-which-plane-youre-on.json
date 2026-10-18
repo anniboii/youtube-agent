@@ -1,0 +1,66 @@
+{
+  "aura": "You can read a plane's history off its engine. The 737's squashed intake is Boeing squeezing a 1980s engine under a 1960s plane, and the same squeeze is what eventually led to the MAX's problems.",
+  "category": "Travel & Flights",
+  "createdAt": 1791257397438,
+  "date": "2026-10-06",
+  "facts": [
+    "The 737's **flattened engine** exists because the plane sits low (a 1960s design) and bigger, efficient engines from the 1980s wouldn't otherwise fit under the wing.",
+    "A 737 flies with its **main wheels exposed**: look up at one overhead and you can see the tyre hubs. An A320 hides them behind doors.",
+    "Sawtooth **chevrons** on the engine edge mean 787 or 737 MAX; add a forked wingtip for the MAX, a smooth swept-back wing for the Dreamliner.",
+    "IndiGo bet on Airbus in 2005 with a **100-plane, ~$6 billion order** before flying a single passenger; Akasa ordered 72 737 MAX jets in 2021 just after its grounding."
+  ],
+  "hook": "That flat-bottomed engine on your Akasa flight isn't a style choice. It's a fix for a 1960s design that sits too close to the ground, and once you see it, you can name almost any plane at an Indian airport in ten seconds.",
+  "minutes": 4,
+  "origin": "daily",
+  "read": false,
+  "readAt": null,
+  "sections": [
+    {
+      "body": "Next time you board at Delhi or Bengaluru, glance out at the plane parked next to yours. There's a very good chance it's one of three machines: an **Airbus A320** (or its stretched sibling, the A321), a **Boeing 737**, or a **Boeing 787 Dreamliner**. To most passengers they're all just 'a plane'. To anyone who knows four or five tells, they're as different as a Swift and a Creta.\n\nThe tells aren't trivia, either. Every one of them exists because an engineer solved a specific problem decades ago, and the solution is still bolted to the outside of the aircraft.",
+      "h": "Ninety seconds at the window"
+    },
+    {
+      "body": "Look at the engine intake head-on. On an A320 it's a clean circle. On most 737s you'll see a circle with the bottom flattened, like a hamster with full cheeks. Plane spotters literally call it the hamster pouch.\n\nThe reason goes back to the 1960s. The original 737 was built to sit low to the ground, so it could work at small airports with built-in stairs and bags loaded by hand. Its first engines were long and skinny, so that was fine. In the early 1980s Boeing wanted the far more efficient CFM56 engine for the 737-300, and that engine's fan was much fatter. Engineers mounted the engine further forward, moved gearbox accessories from the bottom of the casing to the sides, and flattened the lower lip of the intake. According to Air & Space magazine, the key number wasn't intake size but the ratio of the opening's height to its gap above the runway, which decides whether the engine vacuums up rain, slush and debris.\n\nThat same low-slung frame came back to bite Boeing. The 737 MAX's even bigger engines had to sit further forward and higher, which changed how the plane handled and led to the MCAS software at the centre of the 2018 and 2019 crashes. The squashed engine is the visible symptom of a 60-year-old design being stretched again and again.\n\nBonus 737 tell: once airborne, look up at its belly. The main wheels tuck into the fuselage with **no outer doors**, so you can see the round hubs of the tyres in flight. An A320's wheels are hidden.",
+      "h": "The 737's squashed engine is a 1960s fossil"
+    },
+    {
+      "body": "**Cockpit windows.** On an A320, the rear side window has a corner that looks bitten off at the top back. A 737's side windows are sharper and angular, with the lower edge sloping down.\n\n**Wingtips.** Older A320s have a small triangular fence at the tip; the newer A320neo, which is most of IndiGo's fleet, has a tall curved fin called a **sharklet**. The 737 MAX has a split scimitar winglet, one blade pointing up and a smaller one pointing down. If you see a fork, it's a MAX.\n\n**Tail.** The 737's tail ends in a short, stubby cone. The A320 tapers to a longer, more pointed cone.",
+      "h": "The nose, the wingtips and the tail"
+    },
+    {
+      "body": "The 787 is a widebody, so it's bigger, but size is hard to judge on a tarmac. Use these instead. The back edge of each engine is cut into a **sawtooth pattern called chevrons**, which mix the hot exhaust with surrounding air more gently and cut noise. The wingtips have no winglet at all; they simply sweep backward and upward in one long curve (a raked wingtip). The nose is a smooth bullet-train curve with only **four cockpit windows**, where most widebodies have six. And the main landing gear has four wheels per side, not two.\n\nThe giveaway in flight is the wing itself. Made largely of carbon-fibre composite, a 787 wing flexes upward dramatically, and from a window seat you can watch the tip rise several feet as you take off. Inside, the windows are noticeably larger and have no plastic shades: you press a button and the glass darkens electronically.\n\nOne caution: the 737 MAX also has chevrons on its engines. Chevrons plus forked wingtips means MAX; chevrons plus a smooth, swept wing and four wheels a side means Dreamliner.",
+      "h": "The Dreamliner: sawteeth and bendy wings"
+    },
+    {
+      "body": "Airlines love a single aircraft family because pilots, spare parts and engineers all become interchangeable. Pick a family and you're married to it for decades.\n\nIndiGo picked Airbus on 16 June 2005, ordering 100 A320s worth about **US$6 billion** before it had flown a single passenger. Two decades on it runs roughly 430 aircraft, overwhelmingly A320neos and A321neos. It's the world's largest operator of the A320neo, plus a handful of ATR turboprops and leased 787s for long-haul.\n\nAkasa went the other way. In November 2021, while the 737 MAX was barely back from a 20-month grounding and Boeing had hundreds of unsold jets parked, the brand-new airline ordered **72 737 MAX** jets, valued at nearly US$9 billion at list price. Airlines rarely pay list, and a buyer's market is when the deepest discounts happen. Air India's group, meanwhile, flies both: A320neos and 787s at Air India, 737 MAX 8s at Air India Express.\n\nWorked example: you're at Mumbai T2 and see three tails. The IndiGo one has round engines and a curved sharklet: A320neo or A321neo (if it looks unusually long, A321). The Akasa one has squashed-bottom engines with sawtooth edges and a forked wingtip: 737 MAX 8. The Air India one is huge, with sawtooth engines, no winglets and four wheels a side: 787. Three planes, about ten seconds.",
+      "h": "Why your airline flies what it flies"
+    }
+  ],
+  "sources": [
+    {
+      "t": "Flightradar24: Airbus vs Boeing visual differences",
+      "u": "https://www.flightradar24.com/blog/aviation-explainer-series/airbus-boeing-visual-differences/"
+    },
+    {
+      "t": "Air & Space / Smithsonian: How the 737 got its hamster mouth",
+      "u": "https://www.smithsonianmag.com/air-space-magazine/how-737-got-its-hamster-mouth-180952391/"
+    },
+    {
+      "t": "The Points Guy: How to tell 787s and A350s apart",
+      "u": "https://thepointsguy.com/airline/avgeekery-for-beginners-how-to-tell-boeing-787s-and-airbus-a350s-apart/"
+    },
+    {
+      "t": "IndustryWeek: Akasa Air orders 72 Boeing 737 MAX jets",
+      "u": "https://www.industryweek.com/leadership/article/21181441/indias-akasa-air-orders-72-boeing-737-max-jets"
+    },
+    {
+      "t": "Wikipedia: IndiGo fleet",
+      "u": "https://en.wikipedia.org/wiki/IndiGo_fleet"
+    },
+    {
+      "t": "HeraldNet: Boeing is haunted by a 50-year-old feature of 737 jets",
+      "u": "https://www.heraldnet.com/2019/03/15/boeing-is-haunted-by-a-50-year-old-feature-of-737-jets/"
+    }
+  ],
+  "title": "A320, 737 or 787: how to tell which plane you're on"
+}

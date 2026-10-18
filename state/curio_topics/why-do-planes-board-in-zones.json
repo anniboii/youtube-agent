@@ -1,0 +1,66 @@
+{
+  "aura": "Boarding is a one-lane traffic problem where the jam is the overhead bin. Zones barely fix it. They mostly exist to control the gate crowd and sell early bin access.",
+  "category": "Travel & Flights",
+  "createdAt": 1790616832998,
+  "date": "2026-09-28",
+  "facts": [
+    "Boarding back-to-front is one of the slowest methods: in one A320 simulation it took about 31 minutes vs about 18 for random boarding.",
+    "The fastest known method (Steffen) boards windows first, every other row, and is about twice as fast as back-to-front.",
+    "The real bottleneck is overhead-bin stowing, not walking. That's why cabin-bag rules and boarding speed are linked.",
+    "IndiGo said its three-door exit saves about 5 minutes per flight. Across ~1,600 daily flights, that's roughly 133 aircraft-hours a day."
+  ],
+  "hook": "Letting passengers board in totally random order is faster than the 'logical' back-to-front method airlines used for years. The real reason you board in zones is partly traffic and partly money.",
+  "minutes": 4,
+  "origin": "daily",
+  "read": true,
+  "readAt": "2026-10-04T13:36:40.836Z",
+  "sections": [
+    {
+      "body": "An A320 or 737, the planes behind most IndiGo, Akasa and Air India Express flights, has one aisle about half a metre wide. Everyone boarding has to squeeze down it single-file. That makes the aisle a one-lane road, and the whole boarding process is really a traffic problem.\n\nThe slow part isn't walking. It's the two things that block the lane: **stowing bags** in the overhead bin, and **seat shuffles**, where the aisle-seat person has to stand up and step out so the window-seat person can get in. While either is happening, everyone behind is stuck.\n\nBoarding has got slower over the decades: it reportedly took about 15 minutes in the 1970s and can take up to 40 today. The biggest culprit is more cabin bags, which means more time spent at the bins.",
+      "h": "The aisle is a one-lane road"
+    },
+    {
+      "body": "The obvious fix is to fill the plane from the back so nobody walks past people who are sitting down. Airlines did this for years. It turns out to be one of the slowest methods.\n\nThe reason: if you call rows 25 to 30, all those passengers end up bunched in the same few metres of aisle, all opening the same bins at once. You've moved the traffic jam, not removed it.\n\nIn a simulation of a 186-seat A320neo by boarding researcher Adam Jacobs, the results were brutal:\n\n**Back-to-front:** about 31 minutes\n**Random (no order at all):** about 18 minutes\n**Steffen method:** about 11 minutes\n\nYes, letting people board in any order beat the 'logical' method, because random passengers naturally spread out along the aisle and can stow bags in parallel.",
+      "h": "Why back-to-front feels smart but isn't"
+    },
+    {
+      "body": "Astrophysicist Jason Steffen worked out the near-ideal order: window seats first, but only every other row on one side (say 30A, 28A, 26A...), then the other side, then middles, then aisles. Each person gets a clear two-row gap to stow their bag without blocking anyone, and there are no seat shuffles because windows sit before aisles.\n\nIn his tests it was about **twice as fast as back-to-front** and 20 to 30% faster than random.\n\nSo why doesn't any airline do it? Families and friends want to board together. Passengers don't reliably follow instructions. And gate staff would need to line people up almost one by one. The compromise some airlines use is **WILMA** (window, middle, aisle), which keeps a bit of the benefit. United brought it back in 2023, saying it shaves up to two minutes off boarding.",
+      "h": "The fastest method nobody uses"
+    },
+    {
+      "body": "Zones are partly about traffic: sending smaller groups to the gate means a calmer queue, fewer people bunched in the aerobridge, and some control over the order in which people reach the aisle.\n\nBut zones are also a product to sell. Getting on first means guaranteed bin space for your 7 kg cabin bag, and airlines charge for that. IndiGo's zone system puts priority customers in Zone 1, and reportedly sells priority boarding as an add-on for around ₹400. Frequent-flyer tiers and business seats get the same perk. As one expert put it to Popular Science, once airlines figured out they could make money off bags, a lot of the push for faster boarding died.\n\nIndiGo rolled out its colour-coded, four-zone boarding in early 2025, tying your zone to where you're sitting, and said it cut around 7 minutes off typical boarding.",
+      "h": "So why zones? Speed and money"
+    },
+    {
+      "body": "A parked plane earns nothing. Budget airlines make money by flying each aircraft as many times a day as possible, so the time on the ground between flights is ruthlessly managed. IndiGo reportedly turns many of its planes around in about half an hour.\n\nThat's why you often climb stairs from **both** the front and rear doors at a remote stand. Two doors means two lanes into the aisle, roughly halving the queue. IndiGo has also tried a three-door exit for getting off.\n\n**A worked example:** IndiGo said its three-door exit saves about 5 minutes per flight. At the time it ran about 1,600 flights a day, so 5 × 1,600 = 8,000 minutes, or about 133 hours of aircraft time freed up every single day. That's like getting several extra planes' worth of flying time without buying a single plane.\n\nSo the next time the gate agent calls 'Zone 3 only', the airline is juggling bin space, gate crowding and priority fees, all to get the plane back in the air a few minutes sooner.",
+      "h": "Why minutes matter so much in India"
+    }
+  ],
+  "sources": [
+    {
+      "t": "There are quicker ways to board a plane, so why don't airlines use them? (Scientific American)",
+      "u": "https://www.scientificamerican.com/article/there-are-quicker-ways-to-board-a-plane-so-why-dont-airlines-use-them/"
+    },
+    {
+      "t": "The best way to board an airplane, according to science (Popular Science)",
+      "u": "https://www.popsci.com/technology/best-way-to-board-an-airplane-according-to-science/"
+    },
+    {
+      "t": "Steffen boarding method (Wikipedia)",
+      "u": "https://en.wikipedia.org/wiki/Steffen_Boarding_Method"
+    },
+    {
+      "t": "United brings back window-first boarding (Euronews)",
+      "u": "https://www.euronews.com/travel/2023/10/20/seating-window-seat-passengers-first-saves-time-says-us-airline-so-why-dont-more-do-it"
+    },
+    {
+      "t": "IndiGo implements new 4-zone boarding process (Mighty Travels)",
+      "u": "https://www.mightytravels.com/2025/01/indigo-airlines-implements-new-4-zone-boarding-process-a-detailed-analysis-of-changes-and-passenger-impact/"
+    },
+    {
+      "t": "IndiGo introduces three-way exit, saving turnaround time (Business Standard)",
+      "u": "https://www.business-standard.com/article/companies/indigo-introduces-three-way-exit-for-flyers-saving-turnaround-time-122080401339_1.html"
+    }
+  ],
+  "title": "Why do planes board in zones?"
+}

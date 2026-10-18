@@ -1,0 +1,58 @@
+{
+  "aura": "UPI feels instant because the banks trust each other during the day. The actual money moves later in bulk at RBI, so what you see is a promise, not a transfer.",
+  "category": "Money & Payments",
+  "createdAt": 1790616721903,
+  "date": "2026-09-28",
+  "facts": [
+    "GPay and PhonePe never hold your money; they're just front-ends riding on a sponsor bank's UPI connection.",
+    "Your UPI PIN is encrypted by NPCI's library on your phone, so the payment app itself never sees it.",
+    "Banks don't move money per payment: NPCI nets what they owe each other and settles through RBI in batches through the day.",
+    "UPI handled about 24.5 billion payments in August 2026, over 9,000 every second on average."
+  ],
+  "hook": "When your UPI payment says 'success', the money hasn't actually left your bank for the other bank yet. Banks just promise to settle up later, in bulk.",
+  "minutes": 4,
+  "origin": "daily",
+  "read": true,
+  "readAt": "2026-10-02T17:03:51.592Z",
+  "sections": [
+    {
+      "body": "When you scan a QR at a chai stall, it feels like your phone talks to the stall's phone. It doesn't. At least five parties are involved: **your app** (PhonePe, GPay, Paytm), **your bank**, **NPCI's central UPI switch**, **the receiver's bank**, and the receiver's app, which just shows the ping.\n\nApps like GPay and PhonePe aren't banks and never hold your money. They're 'third-party app providers' that ride on a sponsor bank's UPI connection. That's why your UPI ID ends in something like @okaxis or @ybl: the part after the @ tells the network which bank-side handle to route through, while the part before it is just a nickname for your account.\n\nThe real hub is NPCI, the not-for-profit set up by RBI and banks. Every UPI payment in India, from every app, passes through its switch.",
+      "h": "Five players, one tap"
+    },
+    {
+      "body": "Say you pay ₹180 to ramesh@okaxis for chai and a samosa.\n\n**1. Lookup.** Your app sends the request to NPCI, which resolves 'ramesh@okaxis' to a real bank account, which is how your screen shows 'RAMESH KUMAR' before you confirm. NPCI's rules give this address check about 8 seconds max; in practice it's a blink.\n\n**2. PIN.** You type your UPI PIN. It's captured and encrypted by NPCI's secure library on your phone, so the app itself never sees it. Only your bank can decrypt and verify it.\n\n**3. Debit.** NPCI forwards the request to your bank, which checks the PIN and balance and debits ₹180.\n\n**4. Credit.** NPCI then tells Ramesh's bank to credit ₹180. Under the hood this rides on IMPS-style real-time rails.\n\n**5. Confirm.** Both banks report back to NPCI, and both phones get a success message. Ramesh's speaker announces it.\n\nThat round trip typically completes in two to three seconds. Since June 2025, NPCI has also required a pay request to finish within 15 seconds (down from 30), with status checks and reversals in 10, so apps can't leave you staring at 'processing' as long.",
+      "h": "The 2-second relay, step by step"
+    },
+    {
+      "body": "Here's the part most people miss. When Ramesh sees '₹180 received', his bank has credited him, but your bank hasn't actually sent his bank ₹180 yet.\n\nBanks trust each other's promises during the day and settle up in batches. NPCI keeps a running ledger of who owes whom, then settles net amounts through the banks' accounts at RBI in several cycles through the day (roughly every couple of hours during the daytime; NPCI reworked the schedule in late 2025 to put disputes in their own separate cycles).\n\n**A worked example:** in one cycle, customers of Bank A send ₹500 crore to customers of Bank B, while Bank B's customers send ₹480 crore back to Bank A. Instead of moving ₹980 crore, only the ₹20 crore difference actually shifts at RBI. Across millions of payments, netting shrinks the real money movement enormously.\n\nSo UPI is instant for **you**, while the banks still settle the old-fashioned way, in bulk, in the background.",
+      "h": "The twist: the money hasn't actually moved yet"
+    },
+    {
+      "body": "The scale is unreal. In August 2026, UPI processed about **24.5 billion transactions** worth nearly ₹30 lakh crore, a daily average of roughly 791 million. That works out to over 9,000 payments every second on average, with much higher peaks around festive sales and evenings.\n\nA few design choices make that possible. Each message is small and standardised. The switch doesn't store your money, it just routes and records. And because the heavy work (verifying the PIN, checking balance) happens at the banks, load is spread across hundreds of institutions.\n\nThe weak link is usually a bank, not NPCI. When a payment fails with 'bank server down', it's typically your bank or the receiver's timing out. That's why NPCI keeps tightening response-time rules and limits how often apps can spam 'check status' requests.",
+      "h": "Why it doesn't melt down"
+    },
+    {
+      "body": "The classic scare: your balance drops ₹180, but the app says failed. What happened is that step 3 (debit) succeeded but step 4 (credit) didn't confirm in time.\n\nThe system then runs a reversal: NPCI tells your bank to credit the money back. Now that reversals must resolve faster, most of these refunds come back quickly. If one doesn't, it goes into the dispute process, which is exactly why NPCI gave disputes their own dedicated settlement cycles instead of making them compete with regular payments.\n\nSo next time someone panics over a stuck UPI payment, you can calmly say: 'Your bank debited but the other bank didn't acknowledge. It'll reverse.'",
+      "h": "What happens when it 'fails' but money is gone"
+    }
+  ],
+  "sources": [
+    {
+      "t": "How does UPI work? A technical perspective (Aswin Mohan)",
+      "u": "https://aswinmohan.me/how-upi-works"
+    },
+    {
+      "t": "Faster UPI is here: NPCI slashes API response time (Business Today)",
+      "u": "https://www.businesstoday.in/amp/personal-finance/banking/story/faster-upi-is-here-payments-refunds-status-updates-will-now-take-seconds-as-npci-slashes-api-response-time-480707-2025-06-17"
+    },
+    {
+      "t": "New UPI settlement rules from Nov 3 (Business Standard)",
+      "u": "https://www.business-standard.com/finance/personal-finance/new-upi-transaction-rules-from-nov-3-here-s-what-changes-for-users-banks-125092300373_1.html"
+    },
+    {
+      "t": "UPI hits highest-ever monthly volume in August 2026 (StartupTalky)",
+      "u": "https://startuptalky.com/india-upi-transactions-august-2026-record-volume/"
+    }
+  ],
+  "title": "How does UPI move money in 2 seconds?"
+}

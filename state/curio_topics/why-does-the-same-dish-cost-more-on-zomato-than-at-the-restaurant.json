@@ -1,0 +1,66 @@
+{
+  "aura": "The app markup isn't greed, it's arithmetic: the restaurant gives up roughly 40% of a delivery order to commission, GST, packaging and discounts, so it nudges prices up about 10% and still makes less than it would serving you at a table. The '60% off' banner is often the restaurant paying for its own discount.",
+  "category": "Food & Delivery",
+  "createdAt": 1791948600175,
+  "date": "2026-10-14",
+  "facts": [
+    "A Jefferies survey of 80 restaurants found about 80% charge more on delivery apps, typically 10-11% more, and some over 60%.",
+    "Apps typically take a 16-30% commission, plus 18% GST on that commission. Add gateway fees, packaging and discounts, and 35-40%+ of a delivery order can go to non-food costs.",
+    "On a ₹500 order, a restaurant can keep under ₹290. Even with a 10% app markup it keeps about ₹324, still well below the ₹500 it earns at dine-in.",
+    "Big '60% off' banners are often co-funded by the restaurant, which is one reason base prices online are higher."
+  ],
+  "hook": "About 80% of restaurants surveyed charge more on Zomato and Swiggy than on their printed menu. Here's the odd part: even after the markup, they usually earn less from your delivery order than from the same dish eaten at their table.",
+  "minutes": 4,
+  "origin": "daily",
+  "read": false,
+  "readAt": null,
+  "sections": [
+    {
+      "body": "Order a paneer tikka on Zomato or Swiggy, then walk into the same restaurant and read the printed menu. There's a good chance the app price is higher, and it isn't your imagination.\n\nIn a widely reported survey, the brokerage **Jefferies** checked 80 restaurants across India's top eight cities, placing 240 orders worth ₹120 to ₹2,800 and comparing them with dine-in prices. About 80% of them charged more on the apps. The typical premium was 10-11%, nearly one in five charged over 30% more, and the worst case was over 60%. It wasn't every item on the menu, and a few ice-cream parlours were actually cheaper online.\n\nSo who sets the higher price? The restaurant. When a customer posted on LinkedIn in 2022 that his order cost ₹690 on Zomato (after a ₹75 discount) versus ₹512 at the counter, Zomato replied that as an intermediary it 'does not have any control over the prices' restaurants set. That's literally true. The more interesting question is why the restaurant does it.",
+      "h": "The paneer tikka that costs more at home"
+    },
+    {
+      "body": "Restaurants pay the apps a **commission** on every order, typically 16-30% of the food bill according to Business Standard, plus 18% GST on that commission. Then come payment gateway fees (about 1-3%), packaging (₹15-35 an order), optional ads, and often their share of the discount you saw on the app.\n\nHere's the breakdown Bengaluru restaurant associations put forward in 2026, on a ₹500 order:\n\n• Commission at 22%: ₹110\n• GST on that commission: ₹19.80\n• Packaging: ₹25\n• Restaurant-funded discount: ₹50\n• Payment gateway: ₹7.50\n\nTotal: ₹212.30 gone. The restaurant keeps **₹287.70**, meaning about 42% of the order went to costs that don't exist when you eat in. With ingredients alone running 30-35% of the price, a delivery order at dine-in prices can barely break even.",
+      "h": "Where your ₹500 actually goes"
+    },
+    {
+      "body": "Now run the same order with a 10% app markup, so the food bill is ₹550 instead of ₹500. Commission becomes ₹121, GST ₹21.78, gateway about ₹8.25, plus the same ₹25 packaging and ₹50 discount. Total deductions: about ₹226. The restaurant keeps roughly **₹324**.\n\nThat's the counterintuitive bit: even after charging you more, the restaurant still takes home far less than the ₹500 it earns from the same food served on a plate. The markup is a partial patch, not a profit grab. The 30%+ outliers are usually restaurants trying to fully recover the cut, or recovering the cost of a big '50% off' they've agreed to fund.\n\nAnd you pay more than the menu price anyway, because on top of the food you're charged a platform fee, delivery fee and taxes. Those go to the app and the rider, not the kitchen.",
+      "h": "The markup doesn't even cover the cut"
+    },
+    {
+      "body": "Those huge discounts aren't always a gift from the app. Restaurants commonly co-fund or fully fund promotions, and the amount is deducted from their payout. If a restaurant knows it will run '60% off up to ₹120', the simplest way to stay afloat is to start from a higher base price.\n\nThat's why the same dish can look cheap with a banner on and painfully expensive without one. The discount and the markup are often two sides of the same spreadsheet.\n\nRestaurant bodies say there's pressure behind this too. The National Restaurant Association of India (NRAI) alleged that the apps pushed restaurants into funding discounts for better visibility, and restricted them from offering lower prices on their own websites or other apps (a 'price parity' clause). The Competition Commission of India's investigation reportedly found in 2024 that both platforms breached competition law, including via exclusivity deals. Swiggy and Zomato dispute this and called the report preliminary, with no final order passed.",
+      "h": "The '60% off' trick"
+    },
+    {
+      "body": "If you want the dine-in price, a few things help. Many restaurants run their own ordering line or WhatsApp number, where there's no commission to recover. Newer players like Rapido have pitched lower commissions of 8-15%, which in theory leaves less reason to mark up. And for a big family order, a 10-minute pickup can save you 10-30% on food alone, before you even count fees.\n\nThe bigger takeaway: an app order isn't 'the restaurant price plus delivery'. It's a different product with a different price, built to absorb a commission that a sit-down customer never sees.",
+      "h": "How to pay less"
+    }
+  ],
+  "sources": [
+    {
+      "t": "Inc42: Restaurants charging ~10% more on Zomato, Swiggy (Jefferies study)",
+      "u": "https://inc42.com/?p=353348"
+    },
+    {
+      "t": "Inc42: Zomato says it has no control over prices set by restaurants",
+      "u": "https://inc42.com/?p=320138"
+    },
+    {
+      "t": "Business Standard: Bengaluru restaurants threaten Swiggy, Zomato boycott",
+      "u": "https://www.business-standard.com/amp/industry/news/bengaluru-restaurants-threaten-swiggy-zomato-boycott-what-s-the-dispute-126073000471_1.html"
+    },
+    {
+      "t": "Business Standard: Rapido to undercut Zomato, Swiggy with 8-15% commissions",
+      "u": "https://www.business-standard.com/companies/news/rapido-food-delivery-entry-low-restaurant-commission-zomato-swiggy-uber-ola-125060900238_1.html"
+    },
+    {
+      "t": "MediaNama: CCI finds Zomato, Swiggy violating competition laws (report)",
+      "u": "https://www.medianama.com/2024/11/223-cci-finds-zomato-swiggy-violating-competition-laws-report/"
+    },
+    {
+      "t": "Inc42: Swiggy, Zomato and the GST 2.0 squeeze",
+      "u": "https://inc42.com/features/swiggy-zomato-the-gst-2-0-squeeze"
+    }
+  ],
+  "title": "Why does the same dish cost more on Zomato than at the restaurant?"
+}

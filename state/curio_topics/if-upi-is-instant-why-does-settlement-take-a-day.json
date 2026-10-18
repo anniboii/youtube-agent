@@ -1,0 +1,38 @@
+{
+  "aura": "People think UPI is magic because it's instant, but honestly what's instant is just the promise — the actual money still moves in batches later, same as it always has.",
+  "category": "Money & Payments",
+  "createdAt": 1790960610452,
+  "date": "2026-10-02",
+  "facts": [
+    "UPI transactions settle in your app in under 2 seconds, but actual interbank money movement can lag by hours via batch settlement.",
+    "Banks don't move money transaction-by-transaction — they 'net' thousands of transactions and only transfer the final difference.",
+    "The settlement actually happens via each bank's account with the RBI, acting like a shared ledger between all banks.",
+    "A UPI 'successful' message is really just NPCI vouching for the transaction — the cash movement is a separate, slower process behind the curtain."
+  ],
+  "hook": "Your phone says 'payment successful' in 2 seconds, but somewhere in the background, banks are still arguing about who owes whom money for hours.",
+  "minutes": 4,
+  "origin": "asked",
+  "question": "But I generally gets credit right after the payment so where is the delay? Bank settled instantly no?",
+  "read": true,
+  "readAt": "2026-10-02T17:09:43.491Z",
+  "sections": [
+    {
+      "body": "When you pay for chai on UPI, two separate processes kick off. The first is **authorisation** — your bank checks you have the money, the receiver's bank confirms the account is real, and NPCI (the switch that runs UPI) stamps the transaction as approved. This happens in under 2 seconds because it's just a message confirming 'yes, this is valid.'\n\nThe second is **settlement** — the actual movement of money between banks. That message saying 'payment successful' is just confirmation that the transaction is approved, not proof that cash has physically moved from your bank's reserve account to the shopkeeper's bank's reserve account at the RBI.",
+      "h": "Two different things are happening"
+    },
+    {
+      "body": "Imagine you and your flatmate run a tab all month instead of paying each other after every coffee run. At month-end, you just settle the net difference once. Banks do something similar, except the cycle is much shorter — typically multiple times a day, not once a month.\n\nThroughout the day, thousands of UPI transactions happen between, say, HDFC and SBI customers. Instead of moving money transaction-by-transaction, NPCI nets it all out: if HDFC customers paid SBI customers ₹50 crore and SBI customers paid HDFC customers ₹48 crore, only the ₹2 crore difference actually moves between the two banks' accounts at RBI. This netting happens in batches, typically a few times daily, which is why actual interbank settlement can take hours even though your app shows success instantly.",
+      "h": "Why the actual money waits"
+    },
+    {
+      "body": "Say you pay ₹500 to a Zomato delivery partner via UPI at 8 PM. Your bank (say ICICI) instantly deducts ₹500 from your account and shows it debited — that's real, immediate, because it's just an internal ledger entry within your own bank. The delivery partner's bank (say Paytm Payments Bank) simultaneously marks ₹500 as credited to his account and lets him see it.\n\nBut ICICI hasn't actually sent RBI-held money to Paytm Payments Bank yet. That happens later when NPCI runs its settlement batch — ICICI's net position across all its customers' UPI transactions that cycle gets settled against Paytm Payments Bank's net position, via accounts both banks hold with RBI. Your ₹500 is one tiny drop inside a much bigger netted number.",
+      "h": "A worked example"
+    },
+    {
+      "body": "This works because of trust and regulation, not magic. NPCI guarantees the transaction is valid before it's even approved, and banks have agreed contractually to honour the credit shown to customers regardless of when actual settlement completes. Essentially, your bank is extending short-term trust to the system, backed by RBI oversight, similar to how a restaurant lets you eat before the card machine finishes 'processing' in the background.\n\nThis is also why, rarely, you'll hear of UPI 'technical glitches' where money gets debited but credit is delayed — that's usually a hiccup in this exact gap between authorisation and settlement, not a failure of UPI's speed itself.",
+      "h": "Why banks can show credit before settling"
+    }
+  ],
+  "sources": [],
+  "title": "If UPI is instant, why does settlement take a day?"
+}

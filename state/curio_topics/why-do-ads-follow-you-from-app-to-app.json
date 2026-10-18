@@ -1,0 +1,66 @@
+{
+  "aura": "Those ads aren't following you, they're winning you. Every ad slot is a 100-millisecond auction, and if you just looked at sneakers, you're the cheapest sale that brand will ever make, so it outbids everyone else for you.",
+  "category": "Media & Ads",
+  "createdAt": 1790825420340,
+  "date": "2026-10-01",
+  "facts": [
+    "Every time an app loads an ad, a live auction for your eyeballs runs and finishes in under 100 milliseconds.",
+    "Showing you one retargeted ad often costs the brand just a few paise, which is why they can afford to show it 10 times.",
+    "Your phone has an advertising ID that every app sees the same way; that's the thread that ties your shopping app to your cricket app.",
+    "On Android you can delete your ad ID in Settings, and apps then just see a string of zeros."
+  ],
+  "hook": "You looked at sneakers once, and now they're in your cricket app, your news site and your Instagram. Nobody's spying on you personally — you were sold in an auction that took less time than a blink.",
+  "minutes": 4,
+  "origin": "daily",
+  "read": true,
+  "readAt": "2026-10-04T12:58:25.756Z",
+  "sections": [
+    {
+      "body": "Open a shopping app, tap a pair of ₹1,499 white sneakers, close the app. Somewhere in that 20-second visit, a tiny piece of code fired. On websites it's a **tracking pixel** or tag (Meta Pixel, Google's tag); inside apps it's an ads SDK baked into the app. Its job is to report one event — something like \"ViewContent: sneakers, ₹1,499\" — along with an identifier for you.\n\nThat identifier is the whole game. On the web it has traditionally been a **cookie ID**. On phones it's the **advertising ID**: on Android, Google Play services gives every device a resettable string, and on iPhones Apple's equivalent is the IDFA. The shopping app's ad partner now drops that ID into a list called something like \"viewed sneakers, didn't buy\". Google's own docs describe it exactly this way: when people visit a page, their cookie ID is added to the remarketing list.\n\nYou haven't been followed yet. You've just been put on a list.",
+      "h": "You got tagged the moment you looked"
+    },
+    {
+      "body": "Twenty minutes later you open a cricket score site or a free game. That app has an empty ad slot, and it doesn't pick an ad itself. Its ad platform (a **supply-side platform**, or SSP) shouts out a **bid request** to an exchange: here's a slot, here's the device's advertising ID, rough location, app name, screen size — who wants it?\n\nDozens of **demand-side platforms** (DSPs), each bidding for many advertisers, get that request at once. Each checks: is this ID on any of my clients' lists? The sneaker brand's DSP gets a hit — this is the person who looked at the white sneakers — and bids high. A generic insurance advertiser who knows nothing about you bids low.\n\nThe whole thing — request, bids, winner, ad delivered — typically finishes in **under 100 milliseconds**, faster than the page finishes loading. Researchers estimated the industry runs tens of billions of these auctions a day, more transactions than the world's stock markets.",
+      "h": "The 100-millisecond auction you never see"
+    },
+    {
+      "body": "Ad slots are priced per thousand views (CPM). Say the sneaker brand bids **₹180 CPM** for you and the insurance advertiser bids ₹120 CPM. The sneaker ad wins. In a classic second-price auction it pays just above the runner-up, about ₹120 CPM — so showing you that ad costs roughly **12 paise**. (Many exchanges, including Google's, have since switched to first-price auctions, where you pay what you bid; the logic is the same.)\n\nNow the economics. Suppose the brand shows each lapsed visitor the ad about 10 times over a week: ~₹1.20 per person. If 1 in 200 of those people comes back and buys, that's 200 × ₹1.20 = **₹240 spent per sale**. On a ₹1,499 shoe with a few hundred rupees of margin, that's worth it — and much cheaper than finding a brand-new buyer who's never heard of them.\n\nThat's why the ad feels obsessive: you are, statistically, one of the cheapest sales they'll ever make.",
+      "h": "Worked example: is chasing you worth it?"
+    },
+    {
+      "body": "The trick is that every app using the same ad networks sees the **same advertising ID** on your phone. Shopping app and cricket app have never spoken, but both talk to the same exchanges, so the ID ties your visit in one to the ad slot in the other.\n\nAcross websites, companies stitch their different cookie IDs together through **cookie syncing** — invisible redirects that tell partner A \"my user 123 is your user XYZ\". One academic study found nearly 40% of tracking IDs get synced between at least two companies.\n\nGoing from phone to laptop is where the giants shine. Meta and Google know you're logged in on both, so when the Meta Pixel on a store's site reports your visit, Meta can match it to your account and show the sneakers on Instagram on any device. Because browsers now block more cookies, brands increasingly send these events straight from their servers to Meta (the **Conversions API**) instead of relying on the browser at all.",
+      "h": "How it jumps from app to app (and device to device)"
+    },
+    {
+      "body": "Apple changed the default in 2021: with **App Tracking Transparency**, an iPhone app must ask before using your IDFA, and industry data from AppsFlyer put opt-in at only around a quarter to two-fifths of users. But roughly **93% of Indian smartphones run Android** (StatCounter, 2026), where there's no pop-up by default — the ad ID is just there unless you remove it.\n\nYou can. On Android, go to Settings → Privacy (or Google) → Ads and **delete your advertising ID**; per Google's developer docs, apps then just get a string of zeros. You'll still see ads — just ones based on the app you're in, not on what you browsed. On iPhone, tap \"Ask App Not to Track\". Retargeting doesn't vanish (logged-in giants still know you), but the sneakers stop chasing you through every free game.",
+      "h": "Why it's stickier in India — and how to dial it down"
+    }
+  ],
+  "sources": [
+    {
+      "t": "Google Authorized Buyers Help: How remarketing works",
+      "u": "https://support.google.com/authorizedbuyers/answer/166635?hl=en"
+    },
+    {
+      "t": "Wang, Zhang & Yuan: Display Advertising with Real-Time Bidding and Behavioural Targeting (arXiv)",
+      "u": "https://arxiv.org/pdf/1610.03013"
+    },
+    {
+      "t": "Google Play Console Help: Advertising ID",
+      "u": "https://support.google.com/googleplay/android-developer/answer/6048248?hl=en"
+    },
+    {
+      "t": "AppsFlyer: ATT opt-in rates higher than expected",
+      "u": "https://www.appsflyer.com/blog/trends-insights/att-opt-in-rates-higher/"
+    },
+    {
+      "t": "Hootsuite: What is the Meta Pixel and how to use it",
+      "u": "https://blog.hootsuite.com/meta-pixel/"
+    },
+    {
+      "t": "StatCounter: Mobile OS market share in India",
+      "u": "https://gs.statcounter.com/os-market-share/mobile/india"
+    }
+  ],
+  "title": "Why do ads follow you from app to app?"
+}

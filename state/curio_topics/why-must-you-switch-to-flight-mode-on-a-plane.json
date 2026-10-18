@@ -1,0 +1,70 @@
+{
+  "aura": "Flight mode isn't really an aviation rule, it's a telecom rule. A phone 10 km up can see dozens of mobile towers at once and messes up the network for people on the ground; the plane itself is shielded and fine.",
+  "category": "Travel & Flights",
+  "createdAt": 1791775838251,
+  "date": "2026-10-12",
+  "facts": [
+    "The flight-mode rule began in **1961** over portable FM radios, decades before mobile phones existed.",
+    "The US telecom regulator banned airborne cellphone use in **1991** to protect ground networks: a phone at altitude can hit dozens of towers at once.",
+    "The buzz pilots hear comes from 2G phones pulsing about **217 times a second**, the same \"dit-dit-dit\" your speaker makes before a call.",
+    "In India, in-flight mobile service is allowed only above **3,000 metres**, routed through the plane's own network."
+  ],
+  "hook": "Your phone almost certainly can't crash a plane, and regulators have quietly admitted as much. Flight mode exists mostly to protect the networks on the ground, and the pilot's ears.",
+  "minutes": 4,
+  "origin": "daily",
+  "read": true,
+  "readAt": "2026-10-12T12:21:59.922Z",
+  "sections": [
+    {
+      "body": "The cabin crew announcement makes it sound like your phone is a threat to the aircraft: switch to flight mode, or else. But if a single forgotten phone could bring down a plane, it would be screened at security like a lighter. On any IndiGo flight out of Delhi, a handful of the 180-odd passengers almost certainly forget, every single time, and planes keep landing perfectly.\n\nThe real story is two separate rules that got glued together. One comes from aviation regulators worried about cockpit electronics. The other comes from **telecom** regulators worried about something completely different: what a phone at 35,000 feet does to the mobile network below. The second one is the bigger reason your phone still has a little aeroplane icon.",
+      "h": "It was never really about crashing"
+    },
+    {
+      "body": "The aviation side started in the US in 1961, long before mobile phones existed. Regulators found that portable **FM radios** could interfere with aircraft navigation and communication equipment, so they banned portable electronic devices unless the airline had shown they were safe. That rule simply widened over the decades to cover laptops, Walkmans and eventually phones.\n\nWas there ever hard evidence against phones? Mostly anecdotes. A NASA review of years of pilot incident reports found claims of instruments acting up and planes appearing off course, but it couldn't prove a phone caused any of them, and lab tests struggled to reproduce the effects. By 2013, the US FAA concluded that most modern airliners tolerate everyday gadgets, which is why you can now keep your tablet on during take-off. Aircraft electronics are tested and shielded against this kind of radio noise as standard.",
+      "h": "Rule one: the 1961 FM radio scare"
+    },
+    {
+      "body": "Here's the part almost nobody knows. In **1991**, the US telecom regulator, the FCC, banned airborne use of cellular phones, and its reasoning was about the ground, not the plane.\n\nMobile networks are built like a honeycomb. Each tower covers a small cell and the same frequencies get reused a few cells away, which only works because a phone on the ground can only \"see\" a few nearby towers. Lift that phone 10 km into the sky and the geometry breaks. Suddenly it has line of sight to dozens of towers across a huge area, possibly across several cities, all at once.\n\nWorked example: an aircraft cruising at about 850 km/h covers roughly 14 km every minute. A phone that is still on keeps shouting at full power to register with a tower, gets handed to the next one, then the next, sometimes reaching towers in different markets simultaneously and creating interference for people using those frequencies on the ground. Multiply by the passengers who forget, on thousands of flights a day, and you see why telecom regulators cared. It also explains a side effect you've probably noticed: a phone left on during a flight typically drains its battery fast, because it's working at maximum power hunting for signal.",
+      "h": "Rule two: your phone confuses the towers below"
+    },
+    {
+      "body": "The one interference effect that is real and easy to hear isn't about navigation at all. Older 2G (GSM) phones transmit in rapid bursts, about **217 times a second**. Nearby audio equipment, including speakers, hearing aids and pilots' headsets, can pick that up as a buzz. You've heard it: the \"dit-dit-dit\" from a speaker just before your phone rings.\n\nPilots describe it as a mosquito in the ear, and one US airline pilot went viral describing exactly that buzz during a take-off clearance. It won't crash anything, but it's distracting at the precise moments when a pilot is copying instructions from air traffic control. Modern 4G and 5G signals cause this much less, which is one reason the risk keeps shrinking.",
+      "h": "The mosquito in the pilot's ear"
+    },
+    {
+      "body": "Because airlines found a clean fix: bring the network on board. A small mobile base station on the aircraft, called a **pico-cell**, lets phones connect at very low power to the plane itself instead of screaming at towers on the ground, and the traffic is relayed via satellite. The EU has allowed this since 2008, and in November 2022 it cleared 5G on planes, with member states told to make it available by mid-2023.\n\nIndia is cautious but moving. Under the 2018 Flight and Maritime Connectivity Rules, in-flight mobile service can be offered only above **3,000 metres** in Indian airspace, and Wi-Fi was initially allowed only in airplane mode. A 2024 amendment lets Wi-Fi be used whenever the airline permits electronic devices, regardless of altitude. That's why, on Indian flights that offer Wi-Fi, the drill is flight mode on, then Wi-Fi switched back on.\n\nSo the honest answer at dinner: flight mode is mostly about being a good citizen of the mobile network and keeping the pilot's headset quiet. Your phone won't crash the plane. Do switch it on anyway, though. Rules are rules, and your battery will thank you.",
+      "h": "So why can you sometimes use your phone now?"
+    }
+  ],
+  "sources": [
+    {
+      "t": "Make Tech Easier: Airplane mode combines a 1991 FCC rule with a 1961 FAA rule",
+      "u": "https://maketecheasier.com/mte-j-airplane-mode-was-never-just-about-planes-it-combines-a-1991-fcc-network-rule-with-an-faa-interference-rule-dating-to-1961/"
+    },
+    {
+      "t": "FCC 1991 airborne cellular order (FCC 91-399)",
+      "u": "https://docs.fcc.gov/public/attachments/FCC-91-399A1.pdf"
+    },
+    {
+      "t": "European Commission: 5G on planes decision (Nov 2022)",
+      "u": "https://digital-strategy.ec.europa.eu/en/news/5g-planes-wi-fi-road-commission-decision-opens-new-opportunities-innovation"
+    },
+    {
+      "t": "Semafor: EU passengers won't have to turn on airplane mode",
+      "u": "https://www.semafor.com/article/12/06/2022/eu-passengers-wont-have-to-turn-on-airplane-mode-on-flights"
+    },
+    {
+      "t": "CyberPeace: India's 2024 Flight and Maritime Connectivity amendment",
+      "u": "https://cyberpeace.org/resources/blogs/enhancing-in-flight-and-maritime-connectivity-key-updates-and-implications-of-the-2024-dot-amendment"
+    },
+    {
+      "t": "Deccan Herald: In-flight Wi-Fi only when allowed, new rules (Nov 2024)",
+      "u": "https://www.deccanherald.com/india/in-flight-passengers-can-access-wifi-services-only-when-allowed-say-new-rules-3261562"
+    },
+    {
+      "t": "The Nightly: Pilot reveals real reason for aeroplane mode",
+      "u": "https://thenightly.com.au/lifestyle/travel/why-are-passengers-required-to-use-aeroplane-mode-while-flying-c-17060809"
+    }
+  ],
+  "title": "Why must you switch to flight mode on a plane?"
+}

@@ -1,0 +1,78 @@
+{
+  "aura": "Truecaller isn't a phone book, it's a popularity contest. Your caller ID is whatever name most people saved you under, which means your identity on it was decided by your friends' phones, not by you.",
+  "category": "Apps & Tech",
+  "createdAt": 1791430238638,
+  "date": "2026-10-08",
+  "facts": [
+    "Truecaller mostly learns your name from other people's contact books, so you're in it even if you've never installed the app.",
+    "The name strangers see is basically a vote: the label most people saved you under usually wins, unless you register and set your own.",
+    "There's no fixed spam threshold. A model combines reports with call frequency, duration and pickup rate.",
+    "About 350 million of Truecaller's roughly 500 million users are in India, and the country brings in most of its revenue."
+  ],
+  "hook": "Truecaller didn't find out your name from you. It found out from the people who saved your number, and it probably knows what your friends call you behind your back.",
+  "minutes": 4,
+  "origin": "daily",
+  "read": false,
+  "readAt": null,
+  "sections": [
+    {
+      "body": "When an unknown number rings and Truecaller says \"Priya Mehta\", it feels like the app looked her up in some official register. It didn't. Phone companies in India have never shared subscriber names with apps. Truecaller built its own directory, and you and everyone you know helped build it.\n\nThe trick is the contact book. Every phone holds a few hundred numbers, each saved with a name its owner picked. Over the years Truecaller has collected those saved names in bulk. Reporting by Rest of World and The Caravan describes contacts uploaded as users saved them, especially through an option called **Enhanced Search**. Reportedly it came ticked by default on some phones where the app was pre-installed. The company says sharing contacts is voluntary and \"helps improve algorithmic accuracy\". Either way, the outcome is the same: you appear in Truecaller's database whether or not you ever installed the app, because someone who has your number did.\n\nBy 2021 that database reportedly held about **5.7 billion unique phone identities**, far more than the number of people who use the app.",
+      "h": "Your name is a group vote"
+    },
+    {
+      "body": "Say your colleague Rahul's number is saved on 40 phones that feed Truecaller:\n\n- 24 people saved it as \"Rahul Sharma\"\n- 8 saved it as \"Rahul Office\"\n- 5 saved it as \"Rahul Gym\"\n- 3 saved it as \"Bhaiya\"\n\nTruecaller doesn't publish its exact ranking logic, but it is essentially a consensus: the label most people agree on wins. Rahul shows up as \"Rahul Sharma\" for strangers, because 60% of the votes back it and \"Bhaiya\" only means something to his cousins. If Rahul registers on Truecaller himself, the name on his own profile typically takes over.\n\nThis also explains the embarrassing cases. If the only people who saved a number all labelled it \"Plumber\" or \"Don't pick up\", that's what a stranger sees. And when the app checks a call, it looks in **your own phonebook first**, so your label always beats the crowd's.",
+      "h": "A worked example: 40 phones, one number"
+    },
+    {
+      "body": "Spam labels come from the same crowd. When you block a number and tap \"report spam\", that's one vote. Truecaller's help centre says a number turns red once there are \"multiple instances\" of reports. It also says there is **no fixed threshold**: a machine-learning model weighs the reports against how the number behaves.\n\nThe behavioural signals it names are call frequency, call recency, average call duration and how often calls get picked up. Picture two numbers that each got 50 spam reports. Number A placed 6,000 calls yesterday, with an average call lasting 8 seconds and almost nobody answering. Number B is a delivery agent who makes 80 calls a day that last a minute and usually get answered. A looks like a robo-dialler and B looks like someone doing his job, so the model treats them very differently. Users who tap \"not spam\" count too, which is how wrongly flagged numbers recover.",
+      "h": "How a number gets painted red"
+    },
+    {
+      "body": "Truecaller started in Stockholm in 2009, but its real home is India. As of 2026 it reports about **500 million monthly users, roughly 350 million of them Indian**, and India brings in an estimated three-quarters of its revenue. Lots of spam calls, cheap data, and a habit of saving everyone in your contacts (\"Sharma ji Milkman\") made India the perfect place for a crowd-built directory.\n\nThat same approach is why it keeps running into privacy trouble. The people whose names fill the database never agreed to anything; their friends' phones did. Sweden's data protection authority opened an investigation in 2025, and courts in Nigeria have questioned whether one user can consent on behalf of everyone in their contacts.",
+      "h": "Why India is Truecaller's whole story"
+    },
+    {
+      "body": "India's answer is **CNAP (Calling Name Presentation)**. Instead of a crowd vote, your phone shows the name from the subscriber records your telecom operator holds, the ones based on the form and ID you gave when you bought the SIM. The DoT set a March 2026 deadline for a pan-India rollout. Jio, Airtel, Vi and BSNL have been switching it on circle by circle since late 2025, starting with 4G and 5G phones. It's on by default, and you can opt out.\n\nThe two systems have opposite flaws. CNAP shows the legal name, so a family plan in Dad's name can make your sister appear as \"Ramesh Kumar\". Truecaller shows the popular name, which is more human but easier to get wrong. Truecaller's fallback is the thing CNAP lacks: a crowd that remembers which numbers are scammers.",
+      "h": "The rival that uses your SIM form instead"
+    }
+  ],
+  "sources": [
+    {
+      "t": "Rest of World: How Truecaller built a billion-dollar ID data empire in India",
+      "u": "https://restofworld.org/2022/how-truecaller-built-a-billion-dollar-id-data-empire-in-india/"
+    },
+    {
+      "t": "FoneArena: Common myths and misconceptions about Truecaller",
+      "u": "https://www.fonearena.com/blog/377603/common-myths-and-misconceptions-about-truecaller-debunked.html"
+    },
+    {
+      "t": "Truecaller Help: How does spam detection happen on the app?",
+      "u": "https://truecaller.zohodesk.in/portal/en/kb/articles/how-does-truecallers-spam-detection-happen-on-the-app"
+    },
+    {
+      "t": "Truecaller Help: What is the spam threshold?",
+      "u": "https://truecaller.zohodesk.in/portal/en/kb/articles/what-is-the-spam-threshold"
+    },
+    {
+      "t": "Truecaller Help: How is spam calculated?",
+      "u": "https://truecaller.zohodesk.in/portal/en/kb/articles/how-is-spam-calculated"
+    },
+    {
+      "t": "Mezha: Truecaller reaches 500 million users",
+      "u": "https://mezha.ua/en/news/truecaller-500m-users-309896/"
+    },
+    {
+      "t": "Wikipedia: Truecaller",
+      "u": "https://en.wikipedia.org/wiki/Truecaller"
+    },
+    {
+      "t": "Business Standard: DoT sets March 2026 deadline for pan-India CNAP rollout",
+      "u": "https://www.business-standard.com/industry/news/cnap-service-nationwide-rollout-by-march-2026-dot-trai-telecom-125102901190_1.html"
+    },
+    {
+      "t": "Cashify: Jio, Airtel, Vi and BSNL roll out CNAP",
+      "u": "https://www.cashify.in/news/jio-airtel-vi-and-bsnl-roll-out-cnap-feature-to-fight-scam-calls-in-india"
+    }
+  ],
+  "title": "How does Truecaller know who's calling you?"
+}

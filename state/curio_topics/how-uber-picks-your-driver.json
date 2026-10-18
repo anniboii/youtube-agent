@@ -1,0 +1,50 @@
+{
+  "aura": "Uber doesn't give you the closest car. It holds your request for a couple of seconds, looks at everyone booking nearby, and solves a matching puzzle to cut total waiting for the whole group. Sometimes that means your driver hasn't even dropped off their current rider yet.",
+  "category": "Apps & Tech",
+  "createdAt": 1790610000000,
+  "date": "2026-09-28",
+  "facts": [
+    "Uber doesn't send the nearest car. It sends the car with the best **road-network ETA**, which is often not the nearest one.",
+    "Matching is done in **batches every few seconds**. Waiting briefly lets the system cut total waiting time for everyone booking nearby.",
+    "Uber maps cities with **hexagons (H3)**, because all six neighbours of a hexagon are the same distance away. Squares don't have that property.",
+    "Your driver can be assigned **while still finishing another trip** if they'll reach you sooner than an idle car."
+  ],
+  "hook": "You'd think the app just sends the closest car. It doesn't. It waits a couple of seconds on purpose, looks at everyone booking near you, and solves a small puzzle before anyone gets a car.",
+  "minutes": 4,
+  "origin": "daily",
+  "read": true,
+  "readAt": "2026-09-28T15:57:13.733Z",
+  "sections": [
+    {
+      "body": "Straight-line distance lies. A driver 300 metres away might be on the other side of a divider, stuck at a long signal, or pointed the wrong way on a one-way street. Another driver 1.2 km away could be on a clear road heading straight toward you.\n\nSo Uber doesn't rank drivers by distance. It ranks them by **pickup ETA**: how long each one would take to reach you on the actual road network, using live traffic, turn restrictions and which side of the road you're standing on.",
+      "h": "The closest car is often the wrong car"
+    },
+    {
+      "body": "If the app gave every rider the best driver the instant they tapped Book, it would be making **greedy** choices. Greedy looks good for one person and bad for the crowd.\n\nImagine two riders, A and B, and two drivers, X and Y. X is 2 minutes from A and 3 minutes from B. Y is 4 minutes from A but 12 minutes from B. Greedy: A books first, gets X (2 min). B is left with Y (12 min). Total wait: 14 minutes.\n\nNow give A driver Y (4 min) and B driver X (3 min). Total: 7 minutes. A waits two minutes longer, B waits nine minutes less.\n\nThis is why Uber uses **batched matching**. It collects requests and free drivers over a short window, a few seconds, then solves the assignment for the whole batch at once so the total waiting across everyone is lower. It's the classic \"assignment problem\" from operations research, running thousands of times a minute across a city.",
+      "h": "It waits a few seconds on purpose"
+    },
+    {
+      "body": "The pool of candidates isn't only idle drivers. If a driver is 1 minute away from dropping someone off near you, they may reach you faster than an empty car 8 minutes away. So the system can match you to a driver who is still finishing a ride.\n\nThat's why you sometimes see \"Your driver is completing a nearby trip.\" It looks odd, but it usually means a shorter wait for you and less empty driving for them.",
+      "h": "Your driver might still be on another trip"
+    },
+    {
+      "body": "To reason about supply and demand quickly, Uber splits the map into a grid of **hexagons**, using a system it built and open-sourced in 2018 called **H3**.\n\nWhy hexagons and not squares? A square has two kinds of neighbours: four that share an edge and four diagonal ones that are farther away. A hexagon's six neighbours are all the same distance from its centre. That makes it much cleaner to answer \"how many cars and how many riders are in and around this cell right now?\", which feeds both matching and surge pricing.",
+      "h": "The city is cut into hexagons"
+    },
+    {
+      "body": "After the algorithm picks, the driver gets an offer with a short timer. If they decline or the timer runs out, you go back into the next batch and get re-matched. That's the moment when \"Finding your ride\" seems to restart.\n\nIn practice the system also learns which drivers are likely to accept which trips, because a perfect match that gets rejected is worse than a slightly slower match that sticks.",
+      "h": "Then a human gets a vote"
+    }
+  ],
+  "sources": [
+    {
+      "t": "Uber: How marketplace matching works",
+      "u": "https://www.uber.com/us/en/marketplace/matching/"
+    },
+    {
+      "t": "Uber Engineering: H3, Uber's hexagonal hierarchical spatial index",
+      "u": "https://www.uber.com/blog/h3/"
+    }
+  ],
+  "title": "How does Uber pick your driver?"
+}

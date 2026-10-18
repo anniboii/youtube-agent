@@ -1,0 +1,54 @@
+{
+  "aura": "Shazam isn't really listening, it's stargazing. It turns a song into a map of its loudest points, and when enough of your clip's points line up with one track at the same time offset, that's the match, even if the café is louder than the music.",
+  "category": "Apps & Tech",
+  "createdAt": 1792035027326,
+  "date": "2026-10-15",
+  "facts": [
+    "Shazam keeps only the loudest **peaks** of a song's spectrogram and discards the rest, like reducing a photo to its brightest stars.",
+    "In Wang's 2003 tests it identified about half of 15-second clips even when the **noise was ~8x more powerful** than the music.",
+    "It started in 2002 as a UK phone number: dial **2580**, hold up your phone for 30 seconds, get an SMS with the song name for 50p.",
+    "It can't recognise humming or most live versions, because it matches a specific **recording**, not a melody."
+  ],
+  "hook": "Shazam doesn't listen to music the way you do. It turns the song into a star map, throws away about 99% of the sound, and can still name it when the café noise is louder than the song.",
+  "minutes": 4,
+  "origin": "daily",
+  "read": false,
+  "readAt": null,
+  "sections": [
+    {
+      "body": "You're in a café in Indiranagar, a song you half-know is playing over the clatter of cups, and three seconds after you tap the button Shazam names it. It feels like the app is listening the way you do. It isn't.\n\nThe first thing your phone does is turn the sound into a picture called a **spectrogram**: time runs left to right, pitch runs bottom to top, and loudness is brightness. A song becomes a smeared heat-map. Then Shazam throws away almost all of it. It keeps only the brightest local peaks, the spots that are louder than everything around them, and forgets how loud they were. What's left looks like a sky full of scattered stars. Co-founder Avery Wang, a Stanford signal-processing PhD, literally called it a **constellation map** in the 2003 paper that describes the system.",
+      "h": "It doesn't listen to the song. It looks at it."
+    },
+    {
+      "body": "The genius is in what gets thrown away. Café chatter, a cheap speaker, a phone mic that cuts the bass: all of these change the overall sound a lot, but they rarely move the loudest points of the song. A strong peak in the guitar at a particular pitch and moment is still the strongest thing in its little neighbourhood, even through a muffled wall. Wang's paper notes the peaks even survive equaliser changes.\n\nThe tests in that paper are wild. With a 15-second sample, Shazam still got about half the songs right at **-9 dB signal-to-noise**, which means the noise was roughly eight times more powerful than the music. It even worked through phone-call compression at 8 kHz, which mattered because the original 2002 version in the UK worked over a voice call: you dialled **2580**, held your phone up to the speaker, the line hung up after about 30 seconds, and an SMS arrived with the song name. It cost 50p, and nothing if it failed.",
+      "h": "Why peaks survive the noise"
+    },
+    {
+      "body": "A single star is useless for searching. \"There's a peak at 1,200 Hz\" matches millions of moments across millions of songs. So Shazam pairs each peak (an **anchor**) with a handful of peaks shortly after it, typically around 10. Each pair becomes one tiny code: the anchor's pitch, the second peak's pitch, and the gap in time between them, packed into a 32-bit number called a **hash**.\n\nThat pairing is what makes it fast. A single peak carries about 10 bits of information; a pair carries about 30. Wang estimated the pairing makes the search roughly **10,000 times faster** in exchange for about 10 times more storage. Every song in the catalogue has been pre-chopped into these hashes and stored in a giant index sorted by hash value, like a phone book. Looking up a hash is a near-instant lookup, not a scan through every song.",
+      "h": "The trick: pairs of stars, not single stars"
+    },
+    {
+      "body": "Here's how the match actually gets decided, with illustrative numbers. Say your 10-second clip produces 300 peaks. With 10 pairs per anchor, that's about 3,000 hashes. Your phone sends these (not the audio) to Shazam's servers, which look each one up.\n\nMost lookups hit random songs: some Arijit track, some Punjabi pop, a jingle. But each stored hash also remembers *when* in its song it occurred. So for every hit, Shazam computes: time in the song minus time in your clip. For the wrong songs those differences are all over the place. For the right song, say the hash at 2.1 s in your clip sits at 76.3 s in the track, and the one at 6.8 s sits at 81.0 s, they all give the **same answer: 74.2 seconds**. Plot them and they form a perfect diagonal line; count them and you get a spike in a histogram.\n\nThat spike is the whole verdict: \"you're listening to song X, 74 seconds in.\" Wang's paper says a heavily corrupted 15-second sample needs only **1-2% of its hashes** to survive for a statistically confident match. In 2003, with about 20,000 tracks on a PC, a search took roughly 5-500 milliseconds.",
+      "h": "Worked example: the diagonal line"
+    },
+    {
+      "body": "Because Shazam matches the exact pattern of a specific recording, it's terrible at things that seem easy to humans. Hum the tune and it typically fails; your humming has the melody but none of the same peaks. A live version or a cover by a wedding band often fails too, since the timing and instruments differ. Even a sped-up Instagram remix can throw it. It isn't recognising *songs*. It's recognising *recordings*.\n\nThat simple idea has scaled absurdly well. Apple bought Shazam in 2018 (announced in 2017, for a reported ~$400 million), and by late 2024 it had passed **100 billion recognitions**, about 12 for every person on Earth. The most-Shazamed song ever is reportedly \"Dance Monkey\". All from a sky full of stars and a line drawn through them.",
+      "h": "What it can't do, and why that proves the point"
+    }
+  ],
+  "sources": [
+    {
+      "t": "Avery Wang, 'An Industrial-Strength Audio Search Algorithm' (ISMIR 2003)",
+      "u": "https://www.princeton.edu/~cuff/ele201/files/Wang03-shazam.pdf"
+    },
+    {
+      "t": "StereoNET: 2580, Shazam's first killer app was a phone call",
+      "u": "https://www.stereonet.com/features/2580-shazams-first-killer-app-was-a-phone-call"
+    },
+    {
+      "t": "Billboard: Shazam hits 100 billion recognitions",
+      "u": "https://www.billboard.com/music/music-news/music-identification-app-shazam-100-billion-recognitions-1235835192"
+    }
+  ],
+  "title": "How does Shazam recognise a song in 3 seconds?"
+}

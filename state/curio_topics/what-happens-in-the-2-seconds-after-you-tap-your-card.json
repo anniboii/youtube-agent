@@ -1,0 +1,58 @@
+{
+  "aura": "A card tap isn't a payment, it's a promise. The money moves the next day, and the beep is really a fraud model deciding in a millisecond that you're you. Your credit card rewards are basically paid for by the 2% the shopkeeper gives up.",
+  "category": "Money & Payments",
+  "createdAt": 1792207707702,
+  "date": "2026-10-17",
+  "facts": [
+    "Tapping your card doesn't move money. It gets a promise from your bank; the merchant is typically paid the next working day.",
+    "Visa says it scores each transaction for fraud in about 1 millisecond, using 500+ risk signals.",
+    "Each tap creates a one-time cryptogram, so a copied tap is useless. That's why chip cards beat magnetic stripes.",
+    "On a ₹1,000 purchase, a credit card typically costs the shop about ₹20, a small shop's Visa debit at most ₹4, and RuPay debit ₹0."
+  ],
+  "hook": "When you tap your card at a café, your money doesn't move at all. What actually crosses the country in those two seconds is a question, a fraud score and a promise. The real cash follows quietly, usually the next day.",
+  "minutes": 4,
+  "origin": "daily",
+  "read": false,
+  "readAt": null,
+  "sections": [
+    {
+      "body": "Hold your card near the machine and a tiny antenna in the card wakes up, powered by the terminal's own radio field. The card has no battery. It gets just enough energy to do one job: sign this one payment.\n\nThe chip takes the amount, the date, a random number from the terminal and a counter that ticks up every time you use the card. It mixes them with a secret key that never leaves the chip, and out comes a short code called a **cryptogram**. That code is valid for this exact payment and nothing else.\n\nThis is why chip and tap cards are so much harder to copy than the old magnetic stripe. The stripe read out the same static data every time, so a skimmer could record it and replay it. Steal a cryptogram and you've stolen a key that has already been used.",
+      "h": "The tap is a sealed envelope, not a swipe"
+    },
+    {
+      "body": "The terminal bundles the cryptogram, your masked card number and the amount into an authorisation request and sends it on a relay:\n\n1. **Terminal → acquirer.** The merchant's bank, or a processor like Pine Labs or Razorpay working with it.\n2. **Acquirer → network.** Visa, Mastercard or RuPay reads the first digits of your card number to see which bank issued it.\n3. **Network → issuer.** Your bank checks the cryptogram, your balance or credit limit, and whether the card is blocked.\n4. **Issuer → back down the chain** with yes or no, plus an approval code that the machine prints on your slip.\n\nThat round trip often crosses thousands of kilometres of fibre and several data centres, and it usually finishes before the beep.",
+      "h": "Four hops in under two seconds"
+    },
+    {
+      "body": "Somewhere on that relay your payment is put on trial. Visa has said its Advanced Authorization system scores each transaction in about **one millisecond**, weighing more than 500 risk attributes. Was this card used in Mumbai ten minutes ago and now in Dubai? Is a ₹40,000 electronics purchase normal for this card at 2 am? The output is a score from 1 (safe) to 99 (very risky). Your bank adds its own models on top and makes the final call.\n\nVisa reportedly credits this kind of AI scoring with stopping about $25 billion of fraud a year. It's also why your card sometimes gets declined on the first day of a holiday abroad. The model sees a pattern that doesn't look like you.",
+      "h": "The 1-millisecond fraud trial"
+    },
+    {
+      "body": "Here's the counterintuitive part. When the machine says APPROVED, no money has moved. Your bank has only **promised** to pay and put a hold on that amount. At the end of the day the merchant's terminal sends all its approved payments as a batch. The network nets out who owes whom across millions of transactions, and the merchant's account is typically credited the next working day.\n\nThat's why a tap shows up as \"pending\" for a while, and why a cancelled hotel booking can keep your money blocked for days. The promise was made instantly; the cleanup is slow.",
+      "h": "Nobody has been paid yet"
+    },
+    {
+      "body": "The merchant pays a fee called the **MDR** (merchant discount rate). It's split three ways: the biggest share, the interchange, goes to your bank for taking the risk; a small network fee goes to Visa or Mastercard; and the acquirer or gateway keeps a markup.\n\nSay you buy a ₹1,000 shirt in Bengaluru:\n\n- **Credit card:** MDR is commercial, typically around 2%. The shop gets about ₹980 and the ₹20 is shared by your bank, the network and the acquirer.\n- **Visa or Mastercard debit card at a small shop** (turnover under ₹20 lakh a year): RBI caps MDR at 0.4%, so at most ₹4. For bigger merchants the cap is 0.9%, with a ₹1,000 ceiling per transaction.\n- **RuPay debit card:** zero MDR by law since January 2020. The shop gets the full ₹1,000.\n\nThat 2% on credit cards is what pays for your reward points and cashback. It's also why some shopkeepers quietly ask for \"2% extra on card.\"\n\nOne last rule: in India you can tap without a PIN only up to **₹5,000**, a limit RBI raised from ₹2,000 in January 2021. A ₹4,999 tap goes straight through; at ₹5,001 the machine asks for your PIN.",
+      "h": "Who pays for the magic: a worked example"
+    }
+  ],
+  "sources": [
+    {
+      "t": "PaymentsJournal: Visa AI scores transactions in ~1 ms (Advanced Authorization)",
+      "u": "https://www.paymentsjournal.com/using-artificial-intelligence-visa-is-combatting-fraud-at-nearly-the-speed-of-light/amp/"
+    },
+    {
+      "t": "Razorpay: Debit card MDR explained (RBI caps, RuPay zero MDR, MDR split)",
+      "u": "https://razorpay.com/blog/debit-card-mdr-in-payment-gateway-explained/"
+    },
+    {
+      "t": "Paisabazaar: RBI raises contactless no-PIN limit to ₹5,000",
+      "u": "https://www.paisabazaar.com/banking/now-pay-rs-5000-contactless-card-transactions/"
+    },
+    {
+      "t": "Security CU: What the EMV chip does differently than the magnetic stripe",
+      "u": "https://www.securitycu.org/ufaqs/what-does-the-emv-chip-do-differently-than-the-magnetic-stripe-on-an-emv-card/"
+    }
+  ],
+  "title": "What happens in the 2 seconds after you tap your card?"
+}

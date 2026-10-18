@@ -1,0 +1,58 @@
+{
+  "aura": "No-cost EMI isn't a free loan, it's a disguised discount. The brand pays your interest upfront because that's cheaper than cutting the price for everyone, and you still pay GST on interest you never 'paid'.",
+  "category": "Money & Payments",
+  "createdAt": 1791516615401,
+  "date": "2026-10-09",
+  "facts": [
+    "On a no-cost EMI the bank still charges full interest; the brand or seller pre-pays it as an instant discount.",
+    "The RBI said back in 2013 that 'zero per cent interest is non-existent'.",
+    "You still pay 18% GST on the interest, so a ₹30,000 phone on 6-month 'no-cost' EMI ends up costing around ₹30,200-30,500.",
+    "That's why most no-cost EMIs run only 3-6 months: longer tenures mean more interest for the brand to fund."
+  ],
+  "hook": "Your bank never lent you that money for free. The RBI itself says \"zero per cent interest is non-existent\", so on a no-cost EMI, someone quietly paid the interest before you even checked out.",
+  "minutes": 4,
+  "origin": "daily",
+  "read": false,
+  "readAt": null,
+  "sections": [
+    {
+      "body": "\"No-cost EMI\" sounds like the bank is lending you money for free. It isn't. Banks don't really do 0% loans, and the RBI has said so out loud. In a September 2013 circular it wrote that **\"zero per cent interest is non-existent\"**, warning that the interest in such schemes is usually camouflaged, for example as a processing fee.\n\nSo what changed? Nothing on the bank's side. Your card issuer still charges its normal EMI interest, typically somewhere around 14-20% a year. The trick is that someone else pays that interest for you, upfront, and the checkout page calls it \"no cost\".\n\nThat someone is usually the brand or the seller. On Amazon, the terms say participating sellers or brands provide an amount equal to the bank's interest, which shows up as an instant discount at checkout.",
+      "h": "The bank still charges interest"
+    },
+    {
+      "body": "Say you buy a ₹30,000 phone on 6-month no-cost EMI, and the bank's rate is 15% a year (1.25% a month).\n\nYour EMI is ₹30,000 ÷ 6 = **₹5,000 a month**. Here's the clever bit. The bank asks: what loan, at 15%, gives exactly ₹5,000 a month for 6 months? The answer is about **₹28,730**.\n\nSo the platform knocks ₹1,270 off the price as a \"no-cost EMI discount\". Your card is charged ₹28,730 as a loan. You repay ₹5,000 × 6 = ₹30,000. The extra ₹1,270 you pay over six months is interest, roughly ₹359 in month one, shrinking to about ₹62 in month six. It just happens to equal the discount the brand gave you, so on paper you paid the sticker price.\n\nNobody waived the interest. The brand pre-paid it.",
+      "h": "Watch the money move: a ₹30,000 phone"
+    },
+    {
+      "body": "Here's where \"no cost\" leaks. **GST at 18% is charged on the interest portion**, and nobody absorbs it. On our ₹1,270 of interest that's about ₹229 extra, spread across your statements.\n\nMany banks also add a one-time processing fee, often starting around ₹199, plus 18% GST on that too, roughly ₹235. Add it up and your \"no-cost\" phone costs about **₹30,460**, not ₹30,000. Small, but not zero.\n\nThen there's the hidden opportunity cost. If the brand was willing to give up ₹1,270 to sell you the phone, that money existed. Some shoppers paying in full get bank or cash offers instead; on no-cost EMI you typically lose those. Some sellers also quietly price the product a bit higher on the EMI route, so always compare the full-payment price.\n\nAnd your card limit takes a hit: the full amount is usually blocked on your credit limit while the EMI conversion goes through, and the remaining balance stays blocked until it's repaid.",
+      "h": "The small print that isn't free"
+    },
+    {
+      "body": "Because it's cheaper than a price cut. Slashing a phone from ₹30,000 to ₹28,730 makes every buyer, including the ones paying cash, expect the lower price, and it hurts the brand's premium image. A \"no-cost EMI\" offer only goes to people who choose EMI, and it makes a ₹30,000 phone feel like \"just ₹5,000 a month\".\n\nThat's also why no-cost EMI is mostly 3 or 6 months. The longer the tenure, the more interest the brand has to fund. At 15%, a 3-month plan on our phone costs the brand about ₹740; a 12-month plan would cost well over ₹2,000. Brands happily pay for short tenures, which nudge you into a bigger purchase without eating too much of their margin.\n\nSo is it worth it? Often, yes, if you'd have bought the item anyway, the EMI-route price matches the regular price, and you pay every instalment on time. A missed payment brings card late fees and interest that wipe out the deal. Just remember: it's a smart marketing discount, not a free loan.",
+      "h": "Why would a brand pay your interest?"
+    }
+  ],
+  "sources": [
+    {
+      "t": "Onmanorama: 0% EMIs aren't zero as you think (RBI 2013 circular)",
+      "u": "https://www.onmanorama.com/news/business/2023/02/04/zero-percent-interest-schemes-banned-rbi.html"
+    },
+    {
+      "t": "EMI Calculator: How banks provide no-cost EMI on e-commerce sites",
+      "u": "https://emicalculator.net/how-banks-manage-to-provide-no-cost-emi-on-e-commerce-websites/"
+    },
+    {
+      "t": "ClearTax: GST on No Cost EMI",
+      "u": "https://cleartax.in/s/gst-on-no-cost-emi"
+    },
+    {
+      "t": "BankBazaar: No-cost EMIs, busting myths",
+      "u": "https://blog.bankbazaar.com/no-cost-emis-busting-myths/"
+    },
+    {
+      "t": "Business Today: Is No-Cost EMI really free?",
+      "u": "https://www.businesstoday.in/amp/personal-finance/banking/story/is-no-cost-emi-really-free-when-should-you-opt-for-it-pros-cons-hidden-costs-467006-2025-03-06"
+    }
+  ],
+  "title": "Is 'No-cost EMI' actually free?"
+}

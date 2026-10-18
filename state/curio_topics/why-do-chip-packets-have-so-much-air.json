@@ -1,0 +1,66 @@
+{
+  "aura": "The puff in a chips packet is nitrogen, put there because oxygen would turn the oil rancid and the chips would be crumbs by the time they reach the shop. But brands still decide how much puff to add, so I compare the grams on the back, not the size of the bag.",
+  "category": "Shopping & Retail",
+  "createdAt": 1791602993741,
+  "date": "2026-10-10",
+  "facts": [
+    "Chip packets are flushed with **nitrogen**, not air, to push out oxygen, which turns the oil in chips rancid.",
+    "In one lab study, nitrogen-flushed crisps developed about **11x less** of the main rancid-smell chemical than normally packed ones.",
+    "A test of 14 US chip brands found bags averaged **43% empty space**, from 19% (Fritos) up to 59% (Cheetos).",
+    "In 2014, two Korean students floated across Seoul's Han River on a raft of about **160 snack packets** to protest over-packaging."
+  ],
+  "hook": "That puffy chips packet isn't full of air. It's full of nitrogen, deliberately pumped in, and without it your chips would taste like old cooking oil within weeks.",
+  "minutes": 4,
+  "origin": "daily",
+  "read": false,
+  "readAt": null,
+  "sections": [
+    {
+      "body": "Squeeze a packet of Lay's or Bingo and it pushes back like a pillow. Most people assume it's ordinary air and that the company is fooling them into thinking they're getting more. The gas inside is mostly **nitrogen**. Just before the bag is sealed, the packing line floods it with nitrogen to push the oxygen out. The industry calls this nitrogen flushing.\n\nNitrogen is a strange choice for a villain. It already makes up about 78% of the air you breathe, so it's completely harmless. It is also inert: it doesn't react with food. And the industrial gas is dry, which matters for something whose whole appeal is the crunch.",
+      "h": "It's not air. It's nitrogen."
+    },
+    {
+      "body": "A potato chip is basically a thin slice of potato that has soaked up oil. Lab tests in India have found chips run roughly 22-34% fat. Fat plus oxygen gives you **oxidation**, the slow chemical reaction that turns oil rancid and gives old snacks a stale, cardboard-and-paint taste. Moisture in ordinary air is the second enemy, because it makes chips go soft.\n\nSwap the oxygen for nitrogen and both problems shrink. Food scientists call it modified atmosphere packaging. Chip bags are also made of metallised multilayer film rather than clear plastic, because light speeds up oxidation too. Indian quality standards for chips call for packaging that resists oxygen, light and water vapour, and they explicitly allow nitrogen-flushed sealing.",
+      "h": "The real enemy is oxygen"
+    },
+    {
+      "body": "A 2016 study in the journal Food Chemistry tested this properly. Researchers fried potato crisps in regular sunflower oil and packed some normally and some with a nitrogen flush that brought oxygen in the bag **below 2%**. (Normal air is about 21% oxygen.) They stored the packs at 45°C to speed up ageing. Their rule of thumb was that one week at 45°C is roughly four weeks on a 25°C shop shelf.\n\nThey tracked hexanal, the chemical behind the rancid smell. After six weeks, which is about six months of real shelf time, the normally packed crisps hit about **6,700 parts per billion** of hexanal. The nitrogen-flushed ones peaked at about **590**. That's roughly 11 times less rancid smell, just from changing the gas.\n\nThe twist: nitrogen wasn't the biggest lever. Crisps fried in high-oleic sunflower oil, which resists oxidation, stayed under 110 parts per billion even without special gas. So the full recipe for a long shelf life is better oil, plus nitrogen, plus a light-blocking bag. That combination is how a packet made in a factory months ago can still crunch at a kirana shop in a small town.",
+      "h": "How much difference does it make? A worked example"
+    },
+    {
+      "body": "Nitrogen does a second job: **it's a pillow**. Chips are fragile, and packets get stacked in cartons, thrown onto trucks and squeezed into shop racks. A tightly packed bag would arrive full of crumbs. The puffed-up bag spreads the force of each knock and keeps the chips whole.\n\nNow the sceptic's point, which is also true. The space isn't *all* engineering. A 2018 test of 14 US chip brands commissioned by a home-design company found the bags averaged **43% empty space**. Cheetos came in at 59% and Fritos at just 19%. That's the same product category and the same protection problem, with three times the difference. A bigger, puffier bag also simply looks like more on the shelf, and research on shoppers shows people are bad at judging volume. US federal rules (21 CFR 100.100) allow this \"slack fill\" only for listed functional reasons, such as protecting the product, machine limits and settling. Excess beyond that counts as misleading, and lawsuits over it are common there.\n\nIndia's approach is different. The Legal Metrology (Packaged Commodities) Rules focus on making brands print the **net weight**. So the honest way to compare packets is the grams printed on the back, not how fat the bag looks.",
+      "h": "The cushion, and the convenient part"
+    },
+    {
+      "body": "In September 2014, two university students in Seoul taped together about **160 packets of snacks** and paddled them across the Han River as a raft. They covered about 900 metres in roughly 30 minutes. It was a protest against over-packaged snacks in South Korea, and it went viral because it proved the point so neatly: the bags held enough gas to float two grown men.\n\nSo both sides of the dinner-table argument are partly right. The gas really is there for freshness and protection. *How much* of it there is depends on marketing as well as chemistry.",
+      "h": "The best protest ever staged with chips"
+    }
+  ],
+  "sources": [
+    {
+      "t": "Marasca et al., Impact of nitrogen flushing and oil choice on lipid oxidation in potato crisps (Food Chemistry, 2016)",
+      "u": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4725252"
+    },
+    {
+      "t": "Bakery and Snacks: How much air is in your bag of chips?",
+      "u": "https://www.bakeryandsnacks.com/Article/2018/07/04/How-much-air-is-in-your-bag-of-chips"
+    },
+    {
+      "t": "Mental Floss: Why are potato chip bags always half-empty?",
+      "u": "https://www.mentalfloss.com/food/why-are-potato-chip-bags-always-half-empty"
+    },
+    {
+      "t": "21 CFR 100.100: Misleading containers (slack fill)",
+      "u": "https://www.law.cornell.edu/cfr/text/21/100.100"
+    },
+    {
+      "t": "Consumer VOICE comparative test of potato chips and snacks (Dept. of Consumer Affairs)",
+      "u": "https://consumeraffairs.nic.in/sites/default/files/file-uploads/ctocpas/Patato%20chips%20adn%20snack%20foods-11.pdf"
+    },
+    {
+      "t": "Seoul Shinmun: Students cross the Han River on a snack-packet raft (2014)",
+      "u": "https://seoul.co.kr/news/society/2014/09/28/20140928800077"
+    }
+  ],
+  "title": "Why do chip packets have so much air?"
+}

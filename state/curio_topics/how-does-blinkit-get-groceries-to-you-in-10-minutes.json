@@ -1,0 +1,58 @@
+{
+  "aura": "Ten-minute delivery isn't a fast-rider story, it's a geography story: they put a warehouse within 2 km of you and pack your bag in about a minute. The real moat is forecasting what your specific street will order tonight.",
+  "category": "Shopping & Retail",
+  "createdAt": 1790911745350,
+  "date": "2026-10-02",
+  "facts": [
+    "Quick-commerce speed comes from distance, not driving: most drops are under 2 km from a dark store.",
+    "Pickers often get your order ready in 60 to 90 seconds; Zepto has targeted under a minute.",
+    "Dark stores place milk, bread and eggs closest to packing because they're ordered most.",
+    "Blinkit made about ₹3 of adjusted profit per ₹1,000 of orders in Q4 FY26, its first real profit milestone."
+  ],
+  "hook": "The 10-minute promise isn't won on the road. It's won in the first 60 to 90 seconds, inside a shuttered warehouse you've probably walked past without noticing.",
+  "minutes": 4,
+  "origin": "daily",
+  "read": true,
+  "readAt": "2026-10-02T15:56:12.184Z",
+  "sections": [
+    {
+      "body": "When you order on Blinkit, Zepto or Instamart, nothing comes from a giant warehouse on the edge of the city. It comes from a **dark store**: a small, shopper-free warehouse, typically 2,500 to 4,000 sq ft, tucked into a residential lane or basement, holding several thousand products and serving a radius of only about 2 to 3 km.\n\nThat small radius is the whole game. A normal e-commerce order might travel 20 km from a fulfilment centre. A quick-commerce order typically travels under 2 km. The companies didn't make riders magically faster; they moved the shop close enough that speed becomes possible.\n\nAnd there are a lot of them. Blinkit alone reported 2,243 stores at the end of FY26, up from roughly 1,200 dark stores across all three big players not long before.",
+      "h": "The trick: the shop is already next door"
+    },
+    {
+      "body": "Walk into a dark store and it looks nothing like a supermarket. There are no pretty displays, no billing counters, no customers. Aisles are laid out by how often things are bought, not by what looks nice. Fast movers like milk, bread, eggs and chips sit closest to the packing station; slow movers like that one brand of quinoa live at the back.\n\nThe moment you tap Place Order, software does two things at once: it assigns a **picker** inside the store and a **rider** waiting outside. The picker's handheld shows your items in walking order, the shortest path through the aisles, so nobody doubles back. Barcode checks happen on the device, not at a counter.\n\nThe Ken once timed a Zepto store at a target of 58 seconds from order received to bag ready. Industry write-ups put the typical figure at 60 to 90 seconds; a Blinkit store in Ranchi reported about two minutes.",
+      "h": "A store built for robots-in-human-form"
+    },
+    {
+      "body": "Say you order six things at 11 pm in a Bengaluru apartment: milk, bread, eggs, curd, Maggi and a packet of chips. Six items is roughly the average basket.\n\n**0:00** — Order placed. The app already knew which dark store covers your pin and that all six items are in stock there (otherwise it would have hidden them).\n\n**0:00 to 1:30** — Picker walks a pre-planned loop, scans, bags. Meanwhile, the rider is already being nudged toward the door.\n\n**1:30 to 7:00** — The typical drop is about 1.8 km. At an average city speed of about 20 km/h on a two-wheeler, that's 1.8 ÷ 20 = 0.09 hours, or about 5.4 minutes.\n\n**7:00 to 8:30** — Gate, lift, doorbell.\n\nTotal: about 8 to 9 minutes. Notice that the riding is roughly two-thirds of the time, and it's short only because the store is close. Nothing here requires speeding; the speed was designed in before you even opened the app.",
+      "h": "Worked example: your 8-minute Maggi run"
+    },
+    {
+      "body": "A dark store is tiny, so it can't stock everything. Each one carries what its specific neighbourhood buys, based on demand forecasts. A store near a hostel cluster stocks more instant noodles and energy drinks; one in a family-heavy area carries more diapers and atta. Shelves are refilled from a bigger mother hub, often a few km away, usually multiple times a day.\n\nGet the forecast wrong and you see it in the app: \"out of stock\" in your area while your friend across town can order the same item. That's not a glitch; it's a different store with a different shelf.\n\nDemand also comes in waves: mornings (milk, bread) and evenings (snacks, dinner fixes) are peak hours, and a busy store can push past 1,000 orders a day on festival days. Rider counts are planned around those waves, so someone is almost always idling near the door when your order drops.",
+      "h": "The invisible part: predicting what your street wants"
+    },
+    {
+      "body": "Barely, so far. In Q4 FY26, Blinkit processed about ₹14,386 crore of orders and, for the first time in a while, posted a small adjusted EBITDA profit of ₹37 crore. That's about 0.3% of order value, roughly ₹3 on every ₹1,000 basket.\n\nThe math works only with density: lots of orders per store per hour, so rent and staff get spread thin. Spread ₹14,386 crore across 2,243 stores and 90 days and each store averages roughly ₹7 lakh of orders a day. That's why these companies chase bigger baskets (electronics, beauty, even iPhones) and charge small handling and late-night fees. The 10 minutes is the hook; the economics are a game of shaving rupees off every bag.",
+      "h": "So is it actually a good business?"
+    }
+  ],
+  "sources": [
+    {
+      "t": "ITLN: How 'everything delivered in minutes' works (Blinkit Ranchi dark store)",
+      "u": "https://www.itln.in/logistics/how-everything-delivered-in-minutes-works-1354155"
+    },
+    {
+      "t": "The Ken: Nobody needs grocery in 10 min, here's why Zepto does it anyway",
+      "u": "https://the-ken.com/story/nobody-needs-grocery-in-10-min-heres-why-zepto-does-it-anyway/"
+    },
+    {
+      "t": "MetricsCart: Dark store operations explained",
+      "u": "https://metricscart.com/insights/dark-store-operations/"
+    },
+    {
+      "t": "Sahi: Eternal Q4 FY26 results analysis",
+      "u": "https://www.sahi.com/blogs/eternal-limited-zomato-parent-q4-fy26-results-analysis"
+    }
+  ],
+  "title": "How does Blinkit get groceries to you in 10 minutes?"
+}

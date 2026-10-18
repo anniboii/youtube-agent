@@ -1,0 +1,58 @@
+{
+  "aura": "Airlines don't sell a seat, they sell a ladder of prices for the same seat. When your fare jumps overnight, it's not because they saw you searching, it's because somebody else bought the last cheap rung.",
+  "category": "Travel & Flights",
+  "createdAt": 1791343707501,
+  "date": "2026-10-07",
+  "facts": [
+    "Seats on the same flight are split into 'fare buckets' at different prices; when the cheapest bucket sells out, the price jumps even though the seat is identical.",
+    "A Dutch regulator found airlines change a flight's price about 30-35 times before departure.",
+    "Consumer Reports' 372 test searches: incognito gave the same price 88% of the time. Searching twice doesn't raise your fare.",
+    "Indian airfares are deregulated since 1994, but a government unit checks fares on 78 routes every month against the fare bands airlines file."
+  ],
+  "hook": "The person in 14B may have paid half what you did for the exact same seat, same meal, same delay. And no, the airline didn't raise your fare because you searched twice.",
+  "minutes": 4,
+  "origin": "daily",
+  "read": false,
+  "readAt": null,
+  "sections": [
+    {
+      "body": "An airline doesn't really sell 'a seat on the 7 am Delhi–Mumbai'. It sells that seat at a ladder of prices, called **fare buckets** (or fare classes). Each bucket gets a letter code you may have seen on a ticket — Y for full-fare economy, and a string of other letters for cheaper and cheaper discounted fares — plus a limited number of seats.\n\nThe seats are physically identical. What differs is the price, and often the rules attached: change fees, refundability, baggage, miles earned. Every bucket has a quota, and when it runs out, it closes.\n\nSo when the price on your screen jumps overnight, it usually isn't the airline 'raising the price'. The cheapest bucket simply sold out, and the next one up is now the lowest still open.",
+      "h": "One seat, many price tags"
+    },
+    {
+      "body": "Take an A320 with 186 economy seats on a Bengaluru–Delhi Friday evening flight. These numbers are illustrative, but the mechanics are typical. Say revenue management sets it up like this:\n\n20 seats at ₹4,200, 40 at ₹5,100, 50 at ₹6,300, 46 at ₹8,500, and the last 30 at ₹12,000.\n\nIf you book early, you get ₹4,200. Your colleague books three weeks later after the first 60 seats are gone and pays ₹6,300 for the seat next to you. Someone booking the night before pays ₹12,000. Fill the whole plane on this ladder and it brings in about ₹13.5 lakh. Sell all 186 seats at ₹5,100 and you'd make about ₹9.5 lakh. That ~₹4 lakh gap, on one flight, is why airlines bother.\n\nThe trick is the bucket sizes, and they move. If bookings are running hot, the system shrinks the cheap buckets or shuts them early. If the flight looks soft, it can reopen a cheap bucket to stimulate demand. That's why a fare can occasionally drop again.",
+      "h": "A worked example: 186 seats, five prices"
+    },
+    {
+      "body": "Behind this sits **revenue management** software, forecasting how many people will want this flight at each price, and how many late, price-insensitive travellers (think business trips booked on Thursday for Friday) are likely to show up. It then 'protects' seats for them instead of selling them cheaply now.\n\nThe Netherlands consumer regulator (ACM) found airlines change a flight's price roughly 30 to 35 times over its sales window, and that about one in three tickets sells at 40% or more above the average fare. Prices typically drift down slowly, then climb sharply in the final couple of months.\n\nWhat drives the changes is total bookings for the flight, competitor fares and the calendar: a Friday before Diwali behaves nothing like a Tuesday in February.",
+      "h": "The algorithm watches the plane, not you"
+    },
+    {
+      "body": "Almost everyone believes that searching a route repeatedly makes it more expensive, so they clear cookies or go incognito. The ACM survey found nearly half of consumers believe this. The evidence says otherwise.\n\nConsumer Reports ran 372 paired searches in 2016: incognito was cheaper only 7% of the time, pricier 5% of the time, and identical 88% of the time. Economists from Yale, Berkeley and Chicago who studied a major US airline's pricing data found that overall bookings move prices, but an individual's search behaviour 'almost surely does not affect anything', as Yale's Kevin Williams put it.\n\nWhat you actually saw was a bucket closing between searches, often because other people booked. Regulators do warn that personalised pricing could grow with AI, but the classic bucket system isn't about you.",
+      "h": "The 'they saw me searching' myth"
+    },
+    {
+      "body": "Domestic airfares in India have been deregulated since 1994. Airlines set prices on commercial grounds, and under Rule 135 of the Aircraft Rules they must file their fare bands and account for cost and reasonable profit. The government's Tariff Monitoring Unit checks fares on 78 domestic routes every month to make sure airlines stay within the bands they declared, and it steps in only in exceptional situations. It has done so during COVID, around the Maha Kumbh and after airline disruptions. There's also an 'Air Fare' complaint module on the AirSewa portal.\n\nSo the ₹18,000 Delhi–Goa fare at Christmas is usually legal: it's just the top bucket of the ladder, the only one still open.",
+      "h": "What about India?"
+    }
+  ],
+  "sources": [
+    {
+      "t": "iamexpat.nl: One flight, 35 prices – Dutch ACM study debunks browser cookie myth",
+      "u": "https://www.iamexpat.nl/lifestyle/lifestyle-news/one-flight-35-prices-dutch-study-debunks-browser-cookie-myth"
+    },
+    {
+      "t": "Gizmodo: Incognito mode does not help you find cheap flights",
+      "u": "https://gizmodo.com/incognito-mode-does-not-help-you-find-cheap-flights-1851360398"
+    },
+    {
+      "t": "The Points Guy: Airline fare classes explained",
+      "u": "https://thepointsguy.com/guide/airline-fare-classes/"
+    },
+    {
+      "t": "Kashmir Life: Centre says airfares remain deregulated, monitors fares on 78 domestic routes (July 2026)",
+      "u": "https://kashmirlife.net/centre-says-airfares-remain-deregulated-monitors-fares-on-78-domestic-routes-444533/"
+    }
+  ],
+  "title": "How do airlines decide what your ticket costs?"
+}

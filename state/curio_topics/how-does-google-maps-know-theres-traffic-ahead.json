@@ -1,0 +1,66 @@
+{
+  "aura": "The funny thing is Google Maps never sees a single car. It sees phones, and assumes the cars. That's why one guy with 99 phones in a toy wagon could make an empty street go red.",
+  "category": "Apps & Tech",
+  "createdAt": 1790998158403,
+  "date": "2026-10-03",
+  "facts": [
+    "Google Maps has no road sensors of its own: live traffic comes from anonymised speed pings from phones of people driving with location on.",
+    "In 2020 a Berlin artist created a fake traffic jam on Google Maps by pulling 99 phones down an empty street in a handcart.",
+    "When COVID lockdowns hit, global traffic fell up to 50% and Google had to retrain its models to trust the last few weeks over years of history.",
+    "Google now uses the same Maps data to suggest better traffic-light timings in Bengaluru, Hyderabad and Kolkata, reporting up to 30% fewer stops."
+  ],
+  "hook": "There's no camera watching your road and no sensor under the asphalt. The red line on Google Maps is drawn by the phones sitting in the cars stuck in that jam, possibly including yours.",
+  "minutes": 4,
+  "origin": "daily",
+  "read": true,
+  "readAt": "2026-10-03T17:36:26.488Z",
+  "sections": [
+    {
+      "body": "Old-school traffic systems needed hardware: loop detectors cut into the road, cameras on poles, helicopters for radio reports. Google skipped all of that. When you drive with location turned on and Maps running, your phone sends back small, anonymised pings: roughly where it is and how fast it's moving.\n\nOne phone tells Google almost nothing. But Google's own explanation is that when it combines your speed with **thousands of other phones moving around a city** at the same moment, it gets \"a pretty good picture of live traffic conditions.\" More than a billion kilometres are driven with Google Maps every day across 220+ countries and territories, so on a busy road there are almost always enough phones to read the pulse.\n\nOn privacy, Google says it permanently trims off the start and end points of trips, because a speed reading is harmless but \"where you were going\" is not.",
+      "h": "Your phone is the traffic sensor"
+    },
+    {
+      "body": "Imagine a 3 km stretch of Outer Ring Road in Bengaluru. At 6 am, with the road empty, phones crossing it report around 45 km/h. That's 3 ÷ 45 = 0.067 hours, or **about 4 minutes**. Maps paints it green.\n\nAt 6:15 pm, the same stretch has dozens of phones crawling along, averaging 12 km/h. Now it's 3 ÷ 12 = 0.25 hours, or **15 minutes**. The line turns red, and your ETA quietly jumps by 11 minutes before you've even reached the jam.\n\nThe colours are just speed bands against what's normal for that road: green is normal flow, orange is slower, red is congested, and dark red means stop-and-go. A red-and-white dashed line means the road is closed.\n\nThe hard part is cleaning the data. A phone in a pedestrian's pocket on the footpath, a bike weaving between cars, a bus stopping every 300 metres: all of them move at different speeds on the same road. The system has to work out which signals represent typical vehicle traffic before averaging them, which is trickier in Indian traffic than on a tidy American freeway.",
+      "h": "From pings to a red line: a worked example"
+    },
+    {
+      "body": "In February 2020, Berlin artist Simon Weckert put **99 second-hand smartphones** in a little red handcart, all running Google Maps, and walked it slowly down empty streets. To Google, 99 phones moving at walking pace looked exactly like 99 cars stuck in a jam. The street turned red on Maps, and drivers were nudged to route around a traffic jam made of a toy wagon.\n\nGoogle took it with good humour: a spokesperson said, \"Whether via car or cart or camel, we love seeing creative uses of Google Maps,\" adding that it helps make maps work better over time. The stunt is the clearest proof of how the system works: Maps doesn't see cars at all. It sees phones and infers the cars.",
+      "h": "The prank that turned a green street red"
+    },
+    {
+      "body": "Live data only tells you what's happening now. But if you're 25 minutes from a junction, what matters is what that junction will look like in 25 minutes. So Google mixes live speeds with **historical patterns**: how that road usually behaves at this hour on this day of the week. Its own example is a California freeway that typically flows at about 105 km/h at 6 am but only 25-30 km/h in the late afternoon.\n\nSince 2020, Google has used DeepMind's graph neural networks for this. They model the road network as connected \"supersegments\" and learn how a jam on one stretch spills into the next. Google says its ETAs were already accurate for over 97% of trips, and DeepMind reported the new models improved ETA accuracy further in many cities: around 16% in London, and as much as 51% in Taichung, Taiwan.\n\nHistory can also go wrong. When COVID lockdowns began in early 2020, worldwide traffic dropped by up to 50%, and Google had to change its models to weigh the last 2-4 weeks of traffic far more than older patterns. User reports of crashes, closures and roadwork fill the gaps that speeds alone can't explain.",
+      "h": "Predicting traffic you haven't hit yet"
+    },
+    {
+      "body": "Here's the twist closer to home. Google's Project Green Light uses the same Maps driving patterns to model individual intersections, including how often cars stop and start, and suggests better signal timings to city engineers, with no new hardware on the road. **Bengaluru, Hyderabad and Kolkata** are among its 12 cities. Google reports early results of up to 30% fewer stops and up to 10% lower emissions at the intersections it has tuned.\n\nSo the next time you're crawling through a red patch on Maps, remember that you're not just reading the traffic report. You're one of the people writing it.",
+      "h": "The same data now times your traffic lights"
+    }
+  ],
+  "sources": [
+    {
+      "t": "Google Blog: Google Maps 101, how AI helps predict traffic and determine routes",
+      "u": "https://blog.google/products/maps/google-maps-101-how-ai-helps-predict-traffic-and-determine-routes/"
+    },
+    {
+      "t": "Google DeepMind: Traffic prediction with advanced graph neural networks",
+      "u": "https://deepmind.google/discover/blog/traffic-prediction-with-advanced-graph-neural-networks/"
+    },
+    {
+      "t": "Wikipedia: Google Traffic (crowdsourcing, anonymisation, colour codes)",
+      "u": "https://en.wikipedia.org/wiki/Google_Traffic"
+    },
+    {
+      "t": "CNN: Artist uses 99 phones to trick Google into traffic jam alert",
+      "u": "https://edition.cnn.com/style/article/artist-google-traffic-jam-alert-trick-scli-intl"
+    },
+    {
+      "t": "Tom's Guide: 99 smartphones create virtual traffic jam in Google Maps",
+      "u": "https://tomsguide.com/news/99-smartphones-google-maps-hack"
+    },
+    {
+      "t": "Google Blog: Project Green Light's work to reduce urban emissions using AI",
+      "u": "https://blog.google/outreach-initiatives/sustainability/google-ai-reduce-greenhouse-emissions-project-greenlight/"
+    }
+  ],
+  "title": "How does Google Maps know there's traffic ahead?"
+}

@@ -1,0 +1,66 @@
+{
+  "aura": "The grid has no warehouse: every unit is made the instant you use it. Engineers watch one number, frequency, and if all of India drifts even 0.1 Hz off 50, someone is drawing more than they should.",
+  "category": "City & Infra",
+  "createdAt": 1792121402490,
+  "date": "2026-10-16",
+  "facts": [
+    "India's grid must stay between **49.90 and 50.05 Hz**: a window of just 0.15 Hz for the entire country.",
+    "When demand beats supply, generators physically slow down, so grid frequency drops. It's a live meter of the balance in every socket.",
+    "During the 9-minute lights-off on 5 April 2020, demand fell about **31 GW**, and engineers pumped water uphill into dams just to soak up power.",
+    "The July 2012 blackout hit about **600 million people**, largely because states overdrew power despite warnings."
+  ],
+  "hook": "India can't store its electricity, so every unit you use is being made the instant you flip the switch. The whole country's grid is kept alive by one number humming in every socket: 50.",
+  "minutes": 4,
+  "origin": "daily",
+  "read": false,
+  "readAt": null,
+  "sections": [
+    {
+      "body": "When you flick on the AC at 3 pm in May, somewhere a power station has to burn a little more coal or open a little more water, **that same second**. The grid can't store electricity in any meaningful amount. Batteries and pumped hydro are growing, but they're still a rounding error next to India's demand. So every unit you use is being generated at the exact moment you use it.\n\nThat makes running the grid a live balancing act at a crazy scale. On 25 April 2026 at 3:38 pm, India hit an all-time peak of about **256 GW**, and it had to be produced and consumed in real time across one connected network, with solar alone supplying over 56 GW of it. Supply too little and things break. Supply too much and things also break. The trick is knowing, second by second, which way you're drifting.",
+      "h": "The grid has no warehouse"
+    },
+    {
+      "body": "Here's the elegant part: the grid tells you its own health, for free, in every socket in India. Most power comes from giant generators spinning in sync, and in India they all rotate at a speed that makes the current alternate **50 times a second (50 Hz)**. Every big generator in the country is locked to that same rhythm.\n\nNow picture a lot of people pedalling one very long tandem cycle. If more load is added (everyone switches on geysers), the pedals get heavier and the whole thing slows down a touch. Electrically, when demand beats supply, the extra energy is pulled out of the spinning mass of the turbines, they slow fractionally, and frequency dips below 50. When supply beats demand, they speed up and frequency rises.\n\nSo frequency is a live, nationwide meter of the balance. India's Grid Code sets the target at 50.000 Hz and the allowed band at just **49.90 to 50.05 Hz**. That's a window of 0.15 Hz. On normal days, Grid-India reports the frequency stays inside it roughly 75-80% of the time.",
+      "h": "50 Hz is the grid's heartbeat"
+    },
+    {
+      "body": "There's no single switch. It's layers, each slower and bigger than the last. In the first seconds, generators react automatically: their governors sense the frequency dip and open up a bit more steam or water without anyone touching anything. Within minutes, the national control room under Grid-India can order reserve plants up or down. Behind that sits planning: states schedule their power a day ahead in **15-minute blocks**, based on demand forecasts that account for weather, festivals and cricket matches.\n\nHydropower is the star when things move fast, because you can open or shut a dam's gates in minutes, while a coal plant takes hours to change course meaningfully. That's also why a solar-heavy grid has a new headache: on low-demand Sundays in August 2024, there was so much sun and wind that frequency spent up to 38% of the day *above* the band, touching 50.39 Hz. Too much power is a problem too.",
+      "h": "Who actually keeps it at 50"
+    },
+    {
+      "body": "The best real-world test came on 5 April 2020, when the PM asked everyone to switch off lights for nine minutes at 9 pm. Sounds harmless. For grid engineers it was terrifying: a sudden, synchronised crash in demand, then an equally sudden surge back.\n\nThey had about two days to prepare. Coal plants were throttled down to near their minimum. Hydro stations ramped up to fill the gap, then just before 9 pm some started **pumping water back up** into reservoirs, purely to add load and soak up power. When the lights went off, hydro output was slashed to under 10% of capacity. At 9:09, it was ramped back up. Demand fell by about **31 GW**, more than double what they had forecast, and the grid didn't blink.",
+      "h": "The night India switched off its lights"
+    },
+    {
+      "body": "The opposite story is the warning. On 30 and 31 July 2012, the northern grid and then the eastern grid collapsed, cutting power to roughly **600 million people**, among the biggest blackouts in history. Trains stopped mid-route and miners were trapped underground in Jharkhand and West Bengal.\n\nThe official panel blamed overload and indiscipline. Several states kept drawing far more than scheduled despite warnings. Worked example: Uttar Pradesh was reportedly generating about 9,000 MW against 11,000 MW demand that July. That 2,000 MW gap, about 18% of its need, was simply pulled off the shared grid. Multiply that across states during a weak monsoon (less hydro), and lines overloaded and tripped one after another, like dominoes. Restoration took about 20 hours. The southern grid was spared because it wasn't yet synchronised with the rest; it joined at the end of 2013, making India one of the largest single-frequency grids in the world.",
+      "h": "When balance fails: July 2012"
+    }
+  ],
+  "sources": [
+    {
+      "t": "Mercom India: Grid-India on IEGC 2023 frequency band and high-frequency events",
+      "u": "https://www.mercomindia.com/high-grid-frequency-events-prompt-grid-india-to-warn-users-to-be-cautious"
+    },
+    {
+      "t": "SolarQuarter: India records all-time peak demand of 256.1 GW (Apr 2026)",
+      "u": "https://solarquarter.com/2026/04/29/india-records-all-time-high-peak-power-demand-of-256-1-gw-meets-supply-without-shortage/"
+    },
+    {
+      "t": "IEEE Spectrum: How engineers kept the power on in India (Apr 2020)",
+      "u": "https://spectrum.ieee.org/how-engineers-kept-power-india"
+    },
+    {
+      "t": "Power Line: Grid Shock of 2012",
+      "u": "https://powerline.net.in/2012/08/22/grid-shock-of-2012/"
+    },
+    {
+      "t": "Renewable Energy World: India blackout panel blames grid overload",
+      "u": "https://www.renewableenergyworld.com/power-grid/outage-management/india-blackout-panel-blames-power-grid-overload-for-outages/"
+    },
+    {
+      "t": "Wikipedia: National Grid (India)",
+      "u": "https://en.wikipedia.org/wiki/National_Grid_(India)"
+    }
+  ],
+  "title": "How does the power grid keep your lights on every second?"
+}

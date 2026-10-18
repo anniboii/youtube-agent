@@ -18,6 +18,8 @@ committed (.gitignore); see step 5 for delivery.
 ## 1. Pick today's topic
 - The library is the Daily Curio artifact https://claude.ai/artifact/ThSSCgGNcTKWY1vav47aVz, collection `topics`
   (read it with the ArtifactData tool, `list`, saving to `state/curio/` with out_dir).
+- If the ArtifactData tool is not available (cloud runs), use the snapshot in `state/curio_topics/*.json` (one file
+  per topic, same shape; file name = topic id). New topics you write go there too, as `<id>.json`.
 - `state/used_topics.json` lists topic ids already made into videos. Pick the first unused topic that tells well
   as a story (a person, an everyday moment, a twist). Prefer variety: not the same category as yesterday.
 - If every topic is used: write ONE new Daily Curio explainer first (how an everyday thing in India really works),

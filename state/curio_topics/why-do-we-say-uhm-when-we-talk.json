@@ -1,0 +1,38 @@
+{
+  "aura": "The wild part is that hesitating isn't a flaw in speech, it's basically a signalling system — your \"um\" is quietly telling the other person's brain \"stay tuned, something less predictable is coming,\" which is why even AI is now being taught to fake it.",
+  "category": "Science Around You",
+  "createdAt": 1790611083616,
+  "date": "2026-09-28",
+  "facts": [
+    "\"Uh\" and \"um\" follow different rules in your brain — one predicts a short pause, the other a longer one.",
+    "Voice assistants are engineered to eliminate filler words, but some newer AI systems are now adding fake \"um\"s back in because flawless speech feels less trustworthy.",
+    "Toddlers barely say \"um\" — the habit actually grows stronger as your vocabulary and reasoning get more complex, not weaker.",
+    "Call centre agents are scripted specifically to avoid filled pauses because hesitation is read as incompetence, even though the same pause from a friend reads as thoughtfulness."
+  ],
+  "hook": "That little \"uhm\" you just typed isn't a glitch in your brain — it's a feature, and it's precisely timed enough that scientists can predict it before you say it.",
+  "minutes": 4,
+  "origin": "asked",
+  "question": "uhm",
+  "read": true,
+  "readAt": "2026-10-02T16:46:24.391Z",
+  "sections": [
+    {
+      "body": "Linguists call \"uhm\" and \"uh\" **filled pauses**. Studies going back to the 1950s (and refined heavily since) show these aren't random noise — they show up right before a harder word or a shift in thought, almost like your brain is buying time. \"Uh\" tends to come before short pauses, \"um\" before longer ones. Your listener actually uses this: hearing \"um\" makes people subconsciously expect something less predictable is coming next, so they pay more attention, not less.",
+      "h": "Not a mistake, a signal"
+    },
+    {
+      "body": "Next time you call Zomato or Swiggy support and get a human (not the bot), notice how the agent rarely says \"um\" — they're trained on scripts with fixed phrases (\"I understand your concern, let me check that for you\") precisely to avoid the appearance of hesitation, because hesitation reads as incompetence on a support call. Compare that to a friend explaining why they're late — full of \"umm\"s — and you don't judge them as incompetent, you judge them as thinking. Context changes how we read the same sound.",
+      "h": "The Zomato support call test"
+    },
+    {
+      "body": "Voice assistants are deliberately built to *never* produce filled pauses, because early user testing showed people found it unsettling — like the machine was \"struggling.\" Ironically, some newer AI voice systems (like advanced customer-service bots reportedly being tested by companies including in India's fintech and telecom space) are now being trained to insert small \"um\"s and \"let me see\"s on purpose, because a flawless instant answer feels robotic and untrustworthy in emotionally loaded conversations — like a bank fraud call.",
+      "h": "Why Alexa and Siri don't say it"
+    },
+    {
+      "body": "Every studied language has some version of this filler — Hindi speakers often use \"matlab\" or \"woh kya hai na,\" Tamil speakers say \"paatheenga,\" the Japanese say \"eto,\" the French say \"euh.\" The *function* is identical everywhere: buy processing time, hold your conversational turn so nobody interrupts you, and signal \"I'm not done, wait.\" Interestingly, kids under 4 barely use filled pauses — the skill of strategically hesitating develops with language fluency, so ironically, more articulate adults use \"um\" more, not less, because they have more complex thoughts to buffer.",
+      "h": "It's a universal, but the sound differs"
+    }
+  ],
+  "sources": [],
+  "title": "Why do we say 'uhm' when we talk?"
+}

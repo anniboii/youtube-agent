@@ -1,0 +1,66 @@
+{
+  "aura": "FASTag is basically UPI for highways. The sticker is just a name tag, and NPCI's switch pulls the money from your bank while you roll through. The next step is taking the barriers out altogether, with overhead gantries and plate cameras doing the job at full speed.",
+  "category": "City & Infra",
+  "createdAt": 1790738987523,
+  "date": "2026-09-30",
+  "facts": [
+    "A FASTag has no battery and doesn't store your balance. It's a passive RFID chip that only gives out an ID when a reader's radio signal powers it up.",
+    "If your bank doesn't respond in time, NPCI's rules treat the toll as 'deemed accepted' so the lane keeps moving, and the money is settled afterwards.",
+    "The ₹3,000 FASTag Annual Pass works out to ₹15 per crossing over 200 crossings, compared with ₹100+ per crossing at many plazas.",
+    "Under NHAI rules, if the queue goes past a yellow line 100 m before the booth, vehicles inside it can go through without paying."
+  ],
+  "hook": "The FASTag sticker on your windshield has no battery, no balance and no idea how much money you have. It's a dumb little antenna, and it still lets a toll plaza bill you in the few seconds you take to roll past.",
+  "minutes": 4,
+  "origin": "daily",
+  "read": true,
+  "readAt": "2026-10-04T16:09:33.636Z",
+  "sections": [
+    {
+      "body": "A FASTag is a **passive RFID tag**: a tiny chip wired to a flat antenna, laminated into a sticker about 10 cm by 5 cm. It has no battery. When your car gets close to the reader mounted over a toll lane, the reader blasts out radio energy. The antenna catches that energy, which is enough to wake the chip for a moment, and the chip radios back a short coded message. Passive tags like this typically work within a few metres of the reader.\n\nThat message is basically an ID number (along with things like your vehicle class). **The tag does not store your balance.** The money lives in a prepaid wallet or bank account linked to that ID. That's why a FASTag never needs charging even though everyone says \"recharge your FASTag\". You're topping up the account, not the sticker.\n\nWindshield tags are also generally built to be tamper-evident: peel one off and it tends to tear the antenna, so it can't simply be moved to a lorry with a higher toll.",
+      "h": "The sticker is just a name tag"
+    },
+    {
+      "body": "Reading the tag is the easy part. The real work is a relay between four players, run on NPCI's **NETC** (National Electronic Toll Collection) network, the same organisation behind UPI.\n\nNPCI describes the flow roughly like this. The plaza's reader captures your tag ID and vehicle class and sends it to the plaza's bank, called the **acquirer**. The acquirer asks NPCI's central **NETC Mapper** whether this tag is real and active. The mapper answers with the vehicle details and tag status (active, blacklisted, not registered). If it's fine, the acquirer works out the fare and sends a debit request through the NETC switch to your bank, the **issuer**. Your bank debits you and sends that SMS. The result then travels back through NETC to the acquirer and on to the plaza.\n\nThe clever bit: NPCI's rules include a **\"deemed accepted\"** outcome. If your bank doesn't respond in the set time, the transaction is treated as accepted anyway, and the money gets settled later. The system is built so that a slow bank server doesn't hold up a queue of trucks.",
+      "h": "The eight-step relay behind one beep"
+    },
+    {
+      "body": "Say you drive a car on NH-48 and cross a plaza whose car toll is ₹120 (fares vary by plaza and vehicle class; this number is just for illustration).\n\n1. The reader picks up your tag's ID as the car rolls in. Class: car/jeep/van.\n2. The mapper confirms the tag is active and points to, say, an ICICI-issued account.\n3. The acquirer calculates ₹120 and sends the debit request over NETC.\n4. Your account drops by ₹120, the SMS arrives, the barrier lifts.\n\nThe government told Parliament in 2026 that electronic tolling takes about **40 seconds** per vehicle against about **12 minutes** under the old manual system. NHAI also caps booth service time at 10 seconds, and if the queue goes past a yellow line painted 100 metres back, vehicles inside it are allowed through without paying.\n\nNow add the **Annual Pass**, launched on 15 August 2025 at ₹3,000 for up to 200 crossings or a year for private cars on national highways. ₹3,000 ÷ 200 = **₹15 per crossing**. On a ₹120 plaza you save ₹105 each time. The tag doesn't change at all. The only difference is that the system checks for a pass before it debits you.",
+      "h": "Worked example: your Delhi to Jaipur drive"
+    },
+    {
+      "body": "FASTag was piloted on the Delhi–Mumbai stretch in 2014 and made compulsory at national highway plazas in February 2021. Pay cash without one and you're typically charged double.\n\nBy early 2026 the minister reported about 5.9 crore active tags (out of 11.86 crore ever issued), roughly 1 crore electronic toll transactions a day, and more than 98% of national highway toll collected electronically. To stop people keeping several tags per car, since February 2024 only the most recent tag per vehicle stays active and older ones get deactivated.",
+      "h": "How big it has become"
+    },
+    {
+      "body": "The barrier is now the slowest part, so NHAI is removing it. **Multi-Lane Free Flow (MLFF)** tolling uses gantries with FASTag readers plus **ANPR** (automatic number plate recognition) cameras that read your plate as a cross-check. You drive under at highway speed and the same NETC relay happens in the background.\n\nBy mid-2026 it was reportedly live at five plazas, including Choryasi near Surat and Mundka in Delhi, with contracts awarded for more and bids out for about 100 others. The government reportedly considered satellite/GPS-based tolling and picked the FASTag-plus-camera route instead, citing security, privacy and control concerns. So the little sticker isn't going away any time soon.",
+      "h": "Next: no barrier at all"
+    }
+  ],
+  "sources": [
+    {
+      "t": "NPCI: NETC FASTag product overview (transaction flow)",
+      "u": "https://npci.org.in/what-we-do/netc-fastag/product-overview"
+    },
+    {
+      "t": "Business Standard: 5.9 crore FASTags active, 11.86 crore issued (Feb 2026)",
+      "u": "https://www.business-standard.com/industry/news/nitin-gadkari-5-9-cr-fastags-active-india-11-86-cr-issued-so-far-126020401576_1.html"
+    },
+    {
+      "t": "Business Today: Centre picks FASTag-based barrier-free tolling over GPS (Jul 2026)",
+      "u": "https://www.businesstoday.in/india/story/centre-picks-fastag-based-barrier-free-tolling-over-gps-technology-544494-2026-07-22"
+    },
+    {
+      "t": "Electronics For You: How the FASTag sticker works",
+      "u": "https://www.electronicsforu.com/technology-trends/learn-electronics/fastag-sticker-working"
+    },
+    {
+      "t": "MotorBeam: NHAI's 10-second toll service time rule",
+      "u": "https://motorbeam.com/know-the-10-second-toll-service-time-rule-by-nhai/amp"
+    },
+    {
+      "t": "Wikipedia: FASTag",
+      "u": "https://en.wikipedia.org/wiki/FASTag"
+    }
+  ],
+  "title": "How does FASTag charge you without you stopping?"
+}

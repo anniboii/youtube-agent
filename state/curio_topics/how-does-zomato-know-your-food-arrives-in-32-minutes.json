@@ -1,0 +1,62 @@
+{
+  "aura": "The ETA isn't a sum, it's a critical path: the rider rides while the chef cooks, so the app is really asking which one finishes last. And it's tuned to be slightly pessimistic, because arriving early costs nothing and arriving late costs a complaint.",
+  "category": "Food & Delivery",
+  "createdAt": 1790652634084,
+  "date": "2026-09-29",
+  "facts": [
+    "Delivery ETAs are split into legs: rider assignment, rider-to-restaurant, kitchen wait, restaurant-to-you, and doorstep.",
+    "The kitchen, not traffic, is the hardest leg to predict; Zomato's model watches the restaurant's last 5 finished and up to 5 in-progress orders.",
+    "Zomato's models are trained to penalise being late more than being early, so ETAs deliberately lean a little pessimistic.",
+    "Zomato's ETA model has to respond in under a millisecond, because it runs every time you open a restaurant page."
+  ],
+  "hook": "That \"32 mins\" isn't one guess. It's four or five separate predictions racing in parallel, and the hardest one to crack isn't traffic, it's the chef.",
+  "minutes": 4,
+  "origin": "daily",
+  "read": true,
+  "readAt": "2026-10-04T14:20:06.107Z",
+  "sections": [
+    {
+      "body": "When Zomato or Swiggy flashes \"32 mins\" on your cart, it looks like a single guess. It isn't. Behind it sit several separate predictions stitched together, one for each leg of your order's journey.\n\nSwiggy's engineers have described splitting delivery into five pieces: **O2A** (order to assignment, how long until a rider accepts), **first mile** (rider reaches the restaurant), **wait time** at the restaurant, **last mile** (restaurant to your door), and the end-to-end total. Zomato breaks it up similarly: kitchen preparation time, delivery partner travel time, and a live buffer that stretches or shrinks with demand, traffic and weather.\n\nThe clever part is that these legs overlap. The rider is riding towards the restaurant while the chef is still cooking. So the app isn't adding everything up; it's working out which leg is the bottleneck.",
+      "h": "It's not one number, it's a relay race"
+    },
+    {
+      "body": "You'd think traffic is the tough variable. It's actually the kitchen. The same butter chicken from the same outlet can take 9 minutes at 4 pm and 25 minutes at 8:30 pm on a Saturday, depending on how many orders are queued, how many cooks showed up, and whether a party of twelve just walked in.\n\nZomato's engineering team has written that prep time data is right-skewed: most orders are quick, but a long tail runs very late. To predict it, their model reads the dishes in your cart (a deep-learning layer that understands item names, quantity and price), the restaurant's type and history, and the live state of its kitchen, specifically the last 5 completed orders and up to 5 orders currently being cooked.\n\nThey also had a measurement problem. Earlier, \"prep time\" was calculated as the gap between the restaurant accepting the order and the rider picking it up, which quietly mixed in how late the rider showed up. So Zomato added a **Food Order Ready** button in the restaurant app. That cleaner signal alone reportedly gave a 9% improvement in predictions landing within 5 minutes of reality.",
+      "h": "The hardest bit is the kitchen"
+    },
+    {
+      "body": "Here's an illustrative breakdown (the numbers are made up, but the logic mirrors how these systems work). You order a biryani in Koramangala at 8:10 pm, 4 km from the restaurant.\n\n**Kitchen:** the model sees 4 orders already cooking and predicts 14 minutes of prep.\n\n**Rider:** finding a rider takes about 2 minutes at peak, and the nearest free one is 1.8 km away, roughly 6 more minutes. So the rider arrives around minute 8, well before the food is ready at minute 14. Kitchen is the bottleneck, so the platform may even deliberately delay assigning the rider so he doesn't stand around.\n\n**Pickup handover:** about 1 minute.\n\n**Last mile:** 4 km at an evening-traffic average of around 18 km/h is about 13 minutes.\n\n**Doorstep:** finding your gate, the lift and the security guard adds roughly 2 minutes.\n\nTotal: 14 + 1 + 13 + 2 = 30 minutes. Add a peak-hour buffer of 2 minutes and you see **\"32 mins\"**. Notice the rider's 8 minutes vanished from the sum because they ran in parallel with cooking.",
+      "h": "A worked example: biryani on a Friday night"
+    },
+    {
+      "body": "Being 5 minutes early makes you happy. Being 5 minutes late makes you open the chat and complain. The two errors don't cost the same, so the models aren't trained to be simply \"accurate on average\".\n\nZomato says it uses a modified quantile loss that punishes underestimating more heavily than overestimating. In plain words: the model is nudged to lean slightly high. Using that and other upgrades, Zomato reported a 9% drop in orders that arrived 3+ minutes later than promised. DoorDash in the US goes a step further and predicts a whole probability range, then picks which point on that range to show depending on the business goal.\n\nThere's also a speed constraint. Zomato notes the ETA model must answer in under a millisecond and handle thousands of requests per second, because it runs every time anyone opens a restaurant page, not just when they order. For the rider's travel leg, Zomato also switched from computing routes on a road map to a lean tree-based model, partly because map data in crowded lanes and smaller towns is often wrong.",
+      "h": "Why the app would rather be pessimistic"
+    },
+    {
+      "body": "The first number is a forecast made before anything has happened. Once you pay, real signals start arriving: the rider's GPS, whether the restaurant pressed \"ready\", a sudden downpour. The system keeps re-running the affected legs.\n\nIf the kitchen is running slow, the whole ETA shifts. If the rider gets stuck at Silk Board, only the last-mile piece updates. Rain is the classic spoiler in Indian cities: it slows riders, reduces how many are online, and spikes orders all at once, hitting three legs at the same time. That's also when Zomato's \"dynamic buffer\" swells, and why rainy-night ETAs look inflated even before you order.",
+      "h": "Why your ETA jumps mid-order"
+    }
+  ],
+  "sources": [
+    {
+      "t": "Zomato: The accurate ETA to customer satisfaction (Part One)",
+      "u": "https://blog.zomato.com/the-accurate-eta-to-customer-satisfaction-part-one"
+    },
+    {
+      "t": "Zomato: Predicting your order's Food Preparation Time",
+      "u": "https://blog.zomato.com/predicting-fpt-optimally"
+    },
+    {
+      "t": "Zomato Technology: The Deep Tech Behind Estimating Food Preparation Time",
+      "u": "https://medium.com/zomato-technology/the-deep-tech-behind-estimating-food-preparation-time-e5068807acb0"
+    },
+    {
+      "t": "Case study summarising Swiggy's 'Predicting Food Delivery Time at Cart'",
+      "u": "https://ai.plainenglish.io/how-swiggy-uses-deep-learning-to-predict-food-delivery-times-a-case-study-through-my-lens-92004b7ef008"
+    },
+    {
+      "t": "DoorDash: Improving ETAs with multi-task models and probabilistic forecasts",
+      "u": "https://careersatdoordash.com/blog/improving-etas-with-multi-task-models-deep-learning-and-probabilistic-forecasts/"
+    }
+  ],
+  "title": "How does Zomato know your food arrives in 32 minutes?"
+}

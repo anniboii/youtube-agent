@@ -1,0 +1,66 @@
+{
+  "aura": "Instagram isn't ranking how good a Reel is, it's betting on what you'll do next, and the most valuable bet is whether you'll forward it. That's why your feed is full of stuff made to be sent, not stuff made to be liked.",
+  "category": "Media & Ads",
+  "createdAt": 1791862194989,
+  "date": "2026-10-13",
+  "facts": [
+    "For Reels shown to non-followers, sends in DMs count for more than likes, according to Adam Mosseri.",
+    "One of Instagram's top predictions is whether you'll tap the Reel's audio, a proxy for 'will this make you create your own'.",
+    "Ranking is a funnel: billions of videos down to thousands, to about 100, to the few you actually see.",
+    "Since 2024, if Instagram finds identical copies of a Reel, it recommends only the original."
+  ],
+  "hook": "Instagram doesn't really care how many people liked a Reel. What moves it most for strangers is how many people forwarded it to a friend in a DM.",
+  "minutes": 4,
+  "origin": "daily",
+  "read": false,
+  "readAt": null,
+  "sections": [
+    {
+      "body": "Every time you open Reels, Instagram has a pool of **billions** of videos it could show you, and only a moment to choose. So it doesn't think hard about all of them. It works like a funnel, a design Meta's engineers have described publicly for Explore, and Reels uses the same family of systems.\n\nStep one is **retrieval**: cheap, fast models grab a few hundred to a few thousand candidates that look roughly right for you. One trick is to turn you and every video into a list of numbers (an \"embedding\") and pick the videos whose numbers sit closest to yours. These video embeddings are computed ahead of time, so the lookup is nearly instant.\n\nStep two is a light ranking model that narrows thousands down to about a hundred. Step three is the heavy model, which studies those hundred closely. Step four is a set of plain rules: don't show three Reels from the same creator back to back, push down anything flagged as borderline, keep the mix varied.",
+      "h": "Billions in, about ten out"
+    },
+    {
+      "body": "The heavy model doesn't give a single \"you'll enjoy this\" score. It makes several separate guesses at once. Instagram says the most important ones for Reels are: how likely you are to **reshare** it, to **watch it all the way through**, to **like** it, and to tap through to its **audio page**. That last one is a stand-in for \"might this inspire you to make your own Reel?\", which Instagram very much wants.\n\nThose guesses are combined into one number using weights. Meta's engineering blog writes the formula as a sum: weight times probability of click, plus weight times probability of like, minus weight times probability of \"see less\", and so on. Negative signals like \"Not interested\" or skipping fast are subtracted.\n\nThe actual weights are secret, and Instagram keeps adjusting them. But the shape of the maths tells you a lot.",
+      "h": "It's not 'what will you like', it's a betting slip"
+    },
+    {
+      "body": "Say you're choosing between two Reels, and the model predicts (these weights are made up, just to show the mechanics):\n\n**Reel A, a Diljit concert clip:** 50% chance you watch to the end, 10% chance you like it, 1% chance you send it to someone.\n\n**Reel B, a meme about the India-Pakistan match:** 35% watch-through, 4% like, 4% send.\n\nNow imagine the weights are 1 for watching through, 2 for a like, and 20 for a share, because a share is rare and says a lot.\n\nReel A scores 0.50 + 0.20 + 0.20 = **0.90**.\nReel B scores 0.35 + 0.08 + 0.80 = **1.23**.\n\nThe meme wins, even though fewer people would finish it and fewer would like it. The chance that you'll drop it into your college friends' group chat on Instagram carries it. That is roughly why your Reels feed feels so full of things built to be forwarded.",
+      "h": "A worked example: the cricket meme beats the concert clip"
+    },
+    {
+      "body": "In January 2025, Instagram head Adam Mosseri named the three signals that matter most: **watch time, likes and sends**. He told creators to look at \"likes per reach\" and \"sends per reach\" rather than raw totals.\n\nThe twist is who the Reel is being shown to. For your existing followers, likes carry a bit more weight. For people who don't follow you, which is most of Reels, since it's built on recommendations from accounts you don't follow, **sends** matter more. A send is a strong vote: you're putting your own reputation behind it with a friend.\n\nWhat the model looks at to make these guesses, in rough order of importance, according to Instagram: your own recent activity (what you liked, saved, shared, commented on), your history with that creator, details about the Reel itself (its audio, visuals, how fast it's catching on), and details about the creator.",
+      "h": "Likes for friends, sends for strangers"
+    },
+    {
+      "body": "In April 2024, Instagram changed its ranking so that when it finds two or more identical Reels, it recommends only the **original**, and it said it would pull accounts that mostly repost others' work out of recommendations. Edited versions like parodies don't count as copies. So a meme page that just re-uploads a creator's video is now, in theory, fighting with one hand tied.\n\nYou also have more control than most people realise. Since November 2024 you can **reset your recommendations** and start fresh. In December 2025, Instagram began rolling out a \"Your Algorithm\" panel in Reels (first in the US, then other English-speaking markets) that shows an AI summary of your interests and lets you dial topics up, down, or out.\n\nThe simplest lever is the one you already have: what you watch to the end, and what you send. Every forward is a vote, both for you and for everyone who follows that creator.",
+      "h": "The rules that keep it from being a copy machine"
+    }
+  ],
+  "sources": [
+    {
+      "t": "Instagram: Instagram Ranking Explained",
+      "u": "https://about.instagram.com/blog/announcements/instagram-ranking-explained/"
+    },
+    {
+      "t": "Meta Engineering: Scaling the Instagram Explore recommendations system (2023)",
+      "u": "https://engineering.fb.com/2023/08/09/ml-applications/scaling-instagram-explore-recommendations-system/"
+    },
+    {
+      "t": "Social Samosa: Instagram reveals key factors for boosting reach (Jan 2025)",
+      "u": "https://www.socialsamosa.com/news-2/instagram-reveals-key-factors-for-boosting-reach-8646916"
+    },
+    {
+      "t": "TechCrunch: Instagram updates ranking to surface more original creators (Apr 2024)",
+      "u": "https://techcrunch.com/2024/04/30/instagram-is-updating-its-ranking-systems-to-surface-more-content-from-smaller-original-creators"
+    },
+    {
+      "t": "Meta: Recommendations reset on Instagram (Nov 2024)",
+      "u": "https://about.fb.com/news/2024/11/introducing-recommendations-reset-instagram/"
+    },
+    {
+      "t": "Net Influencer: Instagram launches 'Your Algorithm' for Reels (Dec 2025)",
+      "u": "https://www.netinfluencer.com/instagram-launches-your-algorithm-tool-for-reels-content-customization/"
+    }
+  ],
+  "title": "How does Instagram decide which Reels you see?"
+}

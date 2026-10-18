@@ -1,0 +1,70 @@
+{
+  "aura": "A rain percentage isn't a forecast of the weather, it's a forecast of the forecaster's uncertainty. They literally run tomorrow 21 times and count how many versions get wet.",
+  "category": "Science Around You",
+  "createdAt": 1791171029285,
+  "date": "2026-10-05",
+  "facts": [
+    "'70% chance of rain' means a 70% chance that **your exact spot** gets at least ~0.25 mm of rain. It says nothing about how long or how hard.",
+    "Forecasters explain it as **Confidence × Coverage**: 100% sure rain hits 70% of the city and 70% sure it hits all of it both come out as 70%.",
+    "IMD's ensemble system runs the weather **21 times** with slightly different starting data; if 15 runs show rain, that's about 71%.",
+    "When The Weather Channel said 20% chance of rain, it actually rained only about 5% of the time: the deliberate **wet bias**."
+  ],
+  "hook": "'70% chance of rain' doesn't mean it rains for 70% of the day, or over 70% of your city. It's the odds that the exact spot you're standing on gets even a few drops, and it often comes from running the weather 21 times and counting votes.",
+  "minutes": 4,
+  "origin": "daily",
+  "read": false,
+  "readAt": null,
+  "sections": [
+    {
+      "body": "Ask five friends what \"70% chance of rain\" means and you'll get at least three answers. It'll rain for 70% of the day. Rain will cover 70% of the city. The forecaster is 70% sure.\n\nThis isn't just your friends. In a 2005 study, researchers led by Gerd Gigerenzer asked people in Amsterdam, Athens, Berlin, Milan and New York what \"30% chance of rain tomorrow\" meant. Only in New York did most people pick the meteorologists' meaning. Europeans mostly went for \"30% of the time\", then \"30% of the area\".\n\nThe official meaning, as the US National Weather Service puts it: the chance that **the specific point you're standing on** gets at least a measurable amount of rain (0.01 inch, about a quarter of a millimetre) during the forecast period. Not how long it rains. Not how hard. Just: will your spot get wet at all?",
+      "h": "Three wrong answers, one right one"
+    },
+    {
+      "body": "Forecasters often explain it with a tiny formula: **PoP = Confidence × Area**. How sure am I that rain shows up somewhere, multiplied by how much of the area I expect it to hit.\n\nWorked example, Bengaluru on a September afternoon. Case A: the forecaster is 100% certain thunderstorms will pop up, but they'll only hit about 70% of the city. 1.0 × 0.7 = **70%**. Case B: she's only 70% sure a rain band arrives at all, but if it does it soaks the whole city. 0.7 × 1.0 = **70%**.\n\nSame number, completely different days. In Case A, rain is near-certain somewhere in Bengaluru, and your Koramangala office might just be in the 30% that stays dry while Whitefield floods. In Case B, it's all or nothing for the whole city.\n\nThat's why \"70%\" can never tell you *how long* or *how heavy*. A 10-minute drizzle and a three-hour downpour both count as \"it rained.\" Indian forecasts lean on the coverage side openly: IMD bulletins say rain will be \"isolated\", \"scattered\", \"fairly widespread\" or \"widespread\", which roughly describe what share of places in a region get rain, from about a quarter or less up to more than three-quarters.",
+      "h": "The secret formula: confidence × coverage"
+    },
+    {
+      "body": "Weather is chaotic. A tiny error in today's temperature or humidity measurement can grow into a totally different forecast a few days out. So instead of running one forecast, modern centres run the model many times, each starting from slightly nudged initial conditions. This is called an **ensemble**.\n\nThe European centre ECMWF started doing this operationally in December 1992 with 33 runs, and moved to 51 by 1996. India's version, built by IITM Pune and handed to IMD on 1 June 2018, runs **21 members** at 12 km resolution, which was billed as the world's highest-resolution global ensemble at the time. It forecasts rainfall probability 10 days ahead, down to block level for farmers.\n\nNow the maths is simple. Suppose 15 of the 21 runs put rain over your area tomorrow afternoon. 15 ÷ 21 ≈ **71%**. Round it, add a forecaster's judgment and some statistical correction for known model biases, and your app shows \"70%\". The percentage is literally a vote among parallel futures.",
+      "h": "Where the number actually comes from: run the future 21 times"
+    },
+    {
+      "body": "A 70% forecast isn't \"wrong\" when it stays dry. It's supposed to stay dry about 3 times out of 10. The real test is called **calibration**: take every day the forecast said 70%, and check whether it actually rained on about 70% of them. ECMWF describes a reliable ensemble exactly this way: an event predicted at 80% should happen 80% of the time.\n\nHere's the twist. Some forecasters deliberately miscalibrate. Data collected by Eric Floehr at ForecastWatch found that when The Weather Channel said 20% chance of rain, it rained only about **5%** of the time. Nate Silver popularised this in *The Signal and the Noise* as the **wet bias**, quoting a Weather Channel meteorologist saying that if their forecast had zero bias in precipitation, \"we are in trouble.\"\n\nWhy? Asymmetric anger. If an app says 5% and you get soaked, you blame the app. If it says 20% and it stays dry, you don't care. So consumer forecasts (often) nudge low rain chances up. Government services like the US National Weather Service tend to be better calibrated. Which number you see depends on whose app you opened.",
+      "h": "How to tell if a forecaster is any good"
+    },
+    {
+      "body": "Treat it as odds, not a schedule. 70% doesn't tell you whether it'll rain at 6 pm or for how long, so check the hourly view or the radar for timing. For coverage-heavy monsoon and pre-monsoon days, a high percentage often means \"it'll rain somewhere near you,\" so carry the umbrella and plan your commute around the gaps.\n\nAnd at low numbers, remember the wet bias: a 20% on a popular app may really be closer to a coin that almost never lands heads. The forecast isn't lying. It's just answering a narrower question than the one you thought you asked.",
+      "h": "What to actually do with the number"
+    }
+  ],
+  "sources": [
+    {
+      "t": "NWS Peachtree City: Probability of Precipitation",
+      "u": "https://www.weather.gov/ffc/pop"
+    },
+    {
+      "t": "NWS Louisville: What does PoP mean?",
+      "u": "https://www.weather.gov/lmk/pops"
+    },
+    {
+      "t": "McGill Office for Science and Society: PoP = Confidence × Coverage",
+      "u": "https://www.mcgill.ca/oss/node/9448"
+    },
+    {
+      "t": "Gigerenzer et al. 2005, 'A 30% chance of rain tomorrow' (Risk Analysis)",
+      "u": "https://researchonline.lse.ac.uk/id/eprint/16975"
+    },
+    {
+      "t": "ECMWF: 25 years of ensemble forecasting",
+      "u": "https://www.ecmwf.int/en/newsletter/153/meteorology/25-years-ensemble-forecasting-ecmwf"
+    },
+    {
+      "t": "IITM Pune: 12 km Ensemble Prediction System handed to IMD",
+      "u": "https://www.tropmet.res.in/102-prjct_news"
+    },
+    {
+      "t": "Wikipedia: Wet bias",
+      "u": "https://en.wikipedia.org/wiki/Wet_bias"
+    }
+  ],
+  "title": "What does '70% chance of rain' actually mean?"
+}

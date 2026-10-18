@@ -1,0 +1,62 @@
+{
+  "aura": "That 'arrives by Thursday' isn't a prediction, it's a bet. The app picks the earliest day it's about 90% sure of, which is why your stuff so often shows up a day early.",
+  "category": "Shopping & Retail",
+  "createdAt": 1792294266253,
+  "date": "2026-10-18",
+  "facts": [
+    "The promised date is typically set at around 90% confidence, so at that setting roughly 40% of parcels arrive exactly on the date and about 45% a day early (ClickPost's figures for Indian brands).",
+    "\"Delivery tomorrow\" disappears in the afternoon because you missed a warehouse or seller cut-off. The parcel isn't slower; it just starts a day later.",
+    "Changing the PIN code changes the date instantly because you've picked a different lane and a different last-mile delivery centre.",
+    "In an Emory study, retailers that changed only the promised date, not real shipping speed, sold more by promising one day faster, but saw more returns when they missed."
+  ],
+  "hook": "The delivery date on your screen isn't the day your parcel will most likely arrive. It's a deliberate bet, usually padded so that most parcels land on time or a day early.",
+  "minutes": 4,
+  "origin": "daily",
+  "read": false,
+  "readAt": null,
+  "sections": [
+    {
+      "body": "When an app says \"Arrives by Thursday\", it is not telling you when your parcel will most likely show up. It is telling you the earliest day it is **confident enough** to promise. Those are two very different numbers.\n\nBehind that one word is a probability curve. For every route, the platform knows from millions of past shipments how many parcels arrived in two days, three days, four days and so on. Then it picks a cut-off point on that curve, often somewhere around 90% confidence, and shows you that day. Logistics software company ClickPost, which runs delivery-date prediction for Indian brands, says its default target is 90% adherence, and at that setting typically about 40% of shipments land exactly on the promised date and another 45% arrive a day *early*.\n\nSo if your parcels often turn up a day before the promise, that's not luck. The early arrival was planned in.",
+      "h": "The date is a bet, not a forecast"
+    },
+    {
+      "body": "The promise is built from three separate predictions added together.\n\n**Clock 1: handling.** How long until the seller packs the item and a courier picks it up? This depends on the seller's track record, not what they claim. Amazon, for example, can switch on \"automated handling time\" based on a seller's historical processing data if their declared time is far slower than what they actually do.\n\n**Clock 2: the lane.** This is the trunk journey from origin to your area, say Surat to Bengaluru: a truck or a flight to a hub, sorting, then onward to the delivery centre that serves your PIN code. ClickPost calls the origin-to-destination lane the strongest single signal in its model, along with which courier is used, day of week, and whether a sale or festival is clogging the network.\n\n**Clock 3: the last mile.** Does a delivery centre even serve your PIN code, and how often do riders go there? A Bengaluru PIN may get daily runs; a remote one in the hills might only get a van every couple of days. That's why typing a different PIN code on the product page can change the date instantly: you just picked a different lane and a different last mile.",
+      "h": "Three clocks, stacked"
+    },
+    {
+      "body": "Here is why \"Delivery tomorrow\" sometimes vanishes in the afternoon. Every warehouse and every seller pickup has a **cut-off**: the last moment an order can be picked, packed and put on the truck that leaves that day. Miss it and your order waits for tomorrow's truck. Your parcel isn't any slower. It just starts a day later.\n\nTake an illustrative order: a kurta from a seller in Surat to a home in Bengaluru. The courier collects at 5 pm, and the seller's cut-off for packing is 1 pm.\n\nSuppose past data on this lane says that after pickup, 35% of parcels arrive in 2 days, 56% more by day 3 (91% total), and nearly all by day 4.\n\nYou order **Monday at 11 am**. It makes the Monday pickup. Day 2 is Wednesday (only 35% sure), day 3 is Thursday (91% sure). The app shows: **\"Arrives by Thursday.\"** It could easily show Wednesday, but it would be wrong two times out of three.\n\nYour friend orders the same kurta **Monday at 3 pm**. It misses the cut-off, gets picked up Tuesday, and the same curve now lands on Friday. Same product, same seller, same address, four hours apart, a full day's difference. That's what the \"Order within 2 hrs 14 mins\" countdown is really about.",
+      "h": "The 2 pm cliff: a worked example"
+    },
+    {
+      "body": "Because the promise itself changes how much people buy. A study led by Ruomeng Cui at Emory University worked with retailers who changed **only the promised date**, not actual shipping speed. Promising delivery one day faster increased sales, profits and how much customers spent per order.\n\nBut there's a catch. Aggressive promises increased product returns when parcels arrived late. Over-cautious promises, on the other hand, lowered customer satisfaction. So every platform is constantly tuning one dial: promise too far out and you lose the sale to a competitor showing \"tomorrow\"; promise too soon and you pay in returns, refunds and angry reviews.\n\nThis is also why the same item can show different dates on different apps. They aren't necessarily faster or slower. They may just be making a different bet on the same curve.",
+      "h": "Why they don't just promise the fastest date"
+    },
+    {
+      "body": "The biggest gains come before you even order. If a platform predicts that Bengaluru will buy lots of a particular phone cover next week, it moves stock into a Bengaluru warehouse in advance. Now Clock 2 almost disappears.\n\nFlipkart says that predictive demand planning and placing inventory closer to customers cut the average distance a shipment travels from about 500 km to about 150 km. Shorter lanes mean tighter curves, and tighter curves let the app promise an earlier date with the same confidence.\n\nSo next time an app says \"by Thursday\", read it as: \"We've looked at millions of parcels on this exact route, your order made today's truck, and we're about 90% sure. There's a decent chance we'll beat it.\"",
+      "h": "The real trick: move the warehouse, not the truck"
+    }
+  ],
+  "sources": [
+    {
+      "t": "ClickPost: EDD prediction, the machine learning behind accurate dates",
+      "u": "https://www.clickpost.ai/blog/edd-prediction-machine-learning-behind-accurate-dates"
+    },
+    {
+      "t": "Emory Goizueta: Optimizing the delivery speed promise can boost sales",
+      "u": "https://goizueta.emory.edu/research-spotlight/optimizing-delivery-speed-promise-can-boost-sales"
+    },
+    {
+      "t": "Carbon6: Amazon's handling and transit time settings (automated handling time)",
+      "u": "https://www.carbon6.io/blog/amazons-new-handling-and-transit-time-settings-for-us-and-china-sellers"
+    },
+    {
+      "t": "Business Standard: Flipkart, Amazon bet on delivery speed as festive sales kick off",
+      "u": "https://www.business-standard.com/amp/industry/news/flipkart-amazon-bet-on-delivery-speed-as-india-s-festive-sales-kick-off-126100701383_1.html"
+    },
+    {
+      "t": "Amazon Science: SPEEDY, sharpening promise time estimates in sub-same-day delivery",
+      "u": "https://www.amazon.science/publications/speedy-framework-for-sharpening-promise-time-estimates-in-sub-same-day-delivery"
+    }
+  ],
+  "title": "How does an app know your parcel arrives 'by Thursday'?"
+}
